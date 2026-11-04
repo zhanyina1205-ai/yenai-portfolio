@@ -10,7 +10,7 @@ const accounts = [
   { platform: "抖音 · 美妆主号", name: "是亮亮", followers: "199.1", unit: "万", purpose: "美妆教程、发型、好物与 vlog" },
   { platform: "小红书 · 美妆号", name: "是亮亮", followers: "125.1", unit: "万", purpose: "美妆与好物种草" },
   { platform: "小红书 · 穿搭号", name: "涂芷靓", followers: "11.9", unit: "万", purpose: "服饰搭配与整体造型展示", featured: true },
-  { platform: "抖音 · 穿搭号", name: "涂芷靓", followers: "12.7", unit: "万", purpose: "服饰展示、穿搭合集与同款种草" },
+  { platform: "抖音 · 穿搭号", name: "涂芷靓", followers: "12.7", unit: "万", purpose: "服饰展示、穿搭合集与同款种草", featured: true },
 ];
 
 export function IpCaseContext() {
