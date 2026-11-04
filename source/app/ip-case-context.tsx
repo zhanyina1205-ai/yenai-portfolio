@@ -52,7 +52,7 @@ export function IpCaseContext() {
       <article><span>02 / 内容表现</span><h5>同时看爆款与日常表现</h5><p>抖音主号样本中，15 条内容均播 <b>51.3 万</b>、中位数 <b>22.6 万</b>；两条峰值贡献约 <b>66.1%</b> 播放。我的判断是：拆解爆款，也用中位数观察日常表现。</p></article>
       <article><span>03 / 增长观察</span><h5>触达之后，检查关注承接</h5><p>报告显示月连接用户环比 <b>+92%</b>，月涨粉率为 <b>−0.83%</b>。触达扩大与净增粉未同步，下一步可检查关注理由、主页承接与留存。</p></article>
     </div>
-    <div className="ip-report-footer"><p className="source-note">播放样本：2026.09.04—10.09；增长指标按报告月度口径。以上为我做的复盘判断，不代表个人增长业绩，也未据此确定涨粉原因。</p><a className="underlined-link" href={reportUrl} target="_blank" rel="noopener noreferrer">查看我做的完整 IP 项目报告 ↗</a></div>
+    <div className="ip-report-footer"><a className="underlined-link" href={reportUrl} target="_blank" rel="noopener noreferrer">查看我做的完整 IP 项目报告 ↗</a></div>
     </section>
   </div>;
 }
