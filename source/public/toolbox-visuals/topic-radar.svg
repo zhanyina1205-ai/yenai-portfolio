@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <title>选题雷达</title>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2=".85" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#fff1e6"/><stop offset=".27" stop-color="#f8c5d3"/><stop offset=".68" stop-color="#d79fb2"/><stop offset=".9" stop-color="#dfb0be"/><stop offset="1" stop-color="#916679"/></linearGradient>
+    <linearGradient id="edge" x2=".35" y2="1"><stop stop-color="#f6dbe1"/><stop offset=".38" stop-color="#755664"/><stop offset=".72" stop-color="#ad8392"/><stop offset="1" stop-color="#493942"/></linearGradient>
+    <linearGradient id="steel" x2="1" y2=".35"><stop stop-color="#715f69"/><stop offset=".21" stop-color="#f5e4dd"/><stop offset=".44" stop-color="#b8a5b0"/><stop offset=".68" stop-color="#fff2ea"/><stop offset="1" stop-color="#7a6874"/></linearGradient>
+    <radialGradient id="glass" cx=".29" cy=".17" r=".93"><stop stop-color="#624850"/><stop offset=".55" stop-color="#322c35"/><stop offset="1" stop-color="#201e25"/></radialGradient>
+    <linearGradient id="sweep" x2="1" y2=".4"><stop stop-color="#f8bacc" stop-opacity=".01"/><stop offset=".65" stop-color="#f8bacc" stop-opacity=".18"/><stop offset="1" stop-color="#ffc4d8" stop-opacity=".66"/></linearGradient>
+    <path id="star" d="M0-12C1-4 4-1 12 0 4 1 1 4 0 12-1 4-4 1-12 0-4-1-1-4 0-12Z" fill="#ffe3e9"/>
+    <g id="screw"><circle r="4.5" fill="#bd929f" stroke="#fcdee0"/><path d="m-2 1 4-2" stroke="#795a68" stroke-linecap="round"/></g>
+  </defs>
+  <g transform="rotate(8 256 260)">
+    <path d="m331 128 13-68" stroke="#4c3c44" stroke-width="12" stroke-linecap="round"/>
+    <path d="m329 126 13-67" stroke="url(#steel)" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="343" cy="56" r="8" fill="url(#steel)" stroke="#806771"/>
+    <rect x="309" y="108" width="37" height="18" rx="5" fill="url(#steel)"/>
+    <rect x="125" y="106" width="248" height="306" rx="50" fill="url(#edge)" stroke="#4a3640" stroke-width="3"/>
+    <rect x="118" y="100" width="248" height="303" rx="48" fill="url(#shell)" stroke="#eed0d4" stroke-width="3"/>
+    <rect x="125" y="107" width="234" height="287" rx="40" stroke="#fff1e7" stroke-opacity=".63" stroke-width="2"/>
+    <use href="#screw" x="148" y="129"/><use href="#screw" x="337" y="129"/>
+    <text x="243" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" letter-spacing="2.5" font-weight="bold" fill="#61434e">YENAI • SIGNAL DESK</text>
+    <circle cx="242" cy="239" r="96" fill="url(#steel)" stroke="#987680" stroke-width="2"/>
+    <circle cx="242" cy="239" r="89" fill="url(#glass)" stroke="#40343e" stroke-width="4"/>
+    <g stroke="#f4bbce" opacity=".45"><circle cx="242" cy="239" r="69"/><circle cx="242" cy="239" r="46"/><circle cx="242" cy="239" r="23"/><path d="M156 239h172m-86-85v170" stroke-dasharray="3 4"/></g>
+    <path d="M242 239l-10-85a86 86 0 0 1 73 27Z" fill="url(#sweep)"/>
+    <path d="m242 239 63-58" stroke="#ffc5d4" stroke-width="2"/>
+    <circle cx="242" cy="239" r="4.2" fill="#ffdeea"/>
+    <use href="#star" transform="translate(283 200) scale(.83)"/><use href="#star" transform="translate(207 269) scale(.59)"/>
+    <circle cx="269" cy="266" r="3" fill="#ebabc4"/><circle cx="202" cy="216" r="2.3" fill="#ebabc4"/>
+    <rect x="151" y="348" width="94" height="22" rx="9" fill="#795865"/><rect x="152" y="346" width="92" height="21" rx="9" fill="#493b43"/>
+    <circle cx="164" cy="356.8" r="3.3" fill="#ffc6dc"/><text x="199" y="360" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing="1.1" fill="#ffdee4">ON AIR</text>
+    <g fill="url(#steel)" stroke="#866976"><circle cx="290" cy="356" r="10"/><circle cx="318" cy="356" r="10"/></g>
+    <path d="M287 356h6m22 0h6m-3-3v6" stroke="#715461" stroke-width="1.4"/>
+    <path d="M202 383h81" stroke="#be92a1" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g stroke="#ecc0ce" stroke-linecap="round" stroke-width="2.6"><path d="M360 58q13 7 15 19m-10-32q21 9 26 31"/></g>
+  <use href="#star" transform="translate(106 268) scale(.85)"/><use href="#star" transform="translate(385 297) scale(.62)"/>
+</svg>

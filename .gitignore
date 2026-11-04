@@ -1,0 +1,14 @@
+site/
+github-pages/
+source/node_modules
+source/dist/
+source/.next/
+source/.vinext/
+source/.wrangler/
+source/*.tsbuildinfo
+backup-location.txt
+original-files.sha256.json
+preview-*.jpg
+deployment-*.json
+.DS_Store
+.env*

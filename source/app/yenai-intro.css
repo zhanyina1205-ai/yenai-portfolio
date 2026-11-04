@@ -1,0 +1,123 @@
+.yenai-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  background: #101111;
+  outline: none;
+  overflow: hidden;
+  animation: yenai-intro-exit .75s 5s ease-in-out forwards;
+}
+.yenai-intro-word-stage { position: relative; z-index: 2; display: grid; place-items: center; width: 100%; }
+.yenai-intro-mark {
+  grid-area: 1 / 1;
+  display: flex;
+  align-items: baseline;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 8vw, 128px);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.085em;
+  padding-right: .1em;
+  transform: skewX(-9deg);
+  text-shadow: 0 0 2px #fff9, 0 0 10px #d9f5ff55, 0 0 20px #c9e7f422;
+  animation: yenai-intro-pink .25s 1.85s ease-out forwards, yenai-script-morph 1.05s 2.25s cubic-bezier(.4,0,.2,1) forwards;
+}
+.yenai-intro-letter {
+  display: inline-block;
+  opacity: 0;
+  animation: yenai-letter-in .26s calc(.1s + var(--letter-index) * .32s) cubic-bezier(.22,.75,.2,1) forwards;
+}
+.yenai-intro-letter:first-child {
+  font-family: NotebookScript, Georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.27em;
+  margin-right: -.055em;
+}
+.yenai-intro-skip, .yenai-intro-sound {
+  position: absolute;
+  z-index: 3;
+  right: max(28px, env(safe-area-inset-right));
+  bottom: max(26px, env(safe-area-inset-bottom));
+  padding: 12px 16px;
+  border: 1px solid #ffffff30;
+  border-radius: 999px;
+  background: transparent;
+  color: #ddd6d3;
+  font: 11px/1.2 sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.yenai-intro-skip:hover, .yenai-intro-skip:focus-visible, .yenai-intro-sound:hover, .yenai-intro-sound:focus-visible {
+  color: #f3c4cf;
+  border-color: #f3c4cf;
+  outline: 2px solid #f3c4cf;
+  outline-offset: 4px;
+}
+@keyframes yenai-letter-in {
+  from { opacity: 0; filter: blur(3px); transform: scale(1.08); }
+  to { opacity: 1; filter: blur(0); transform: scale(1); }
+}
+@keyframes yenai-intro-pink {
+  to { color: #c696a3; text-shadow: 0 0 2px #f3c4cf66, 0 0 12px #c58c9933; }
+}
+@keyframes yenai-intro-exit { to { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .yenai-intro { display: none; animation: none; }
+  .yenai-intro-mark, .yenai-intro-letter { animation: none; }
+}
+
+.yenai-satin-scene { position: absolute; inset: 0; opacity: 0; animation: yenai-satin-appear 1.3s 2.2s ease-in-out forwards; }
+.yenai-satin-image { width: 100%; height: 100%; object-fit: cover; filter: brightness(.36) saturate(.65); animation: yenai-satin-flow 3.6s 2.2s cubic-bezier(.2,.6,.3,1) both; }
+.yenai-satin-shade { position: absolute; inset: 0; background: radial-gradient(ellipse at center, #100d121a, #08070970); }
+.yenai-satin-title {
+  grid-area: 1 / 1;
+  color: #c696a3;
+  width: min(66vw, 1180px);
+  line-height: 0;
+  opacity: 0;
+  animation: yenai-type-morph 1.25s 2.25s cubic-bezier(.4,0,.2,1) forwards;
+}
+.yenai-film-frame { position: absolute; inset: 22px; color: #c5b9b26b; font: 9px/1.4 monospace; letter-spacing: 2px; opacity: 0; animation: yenai-satin-appear .8s 3s ease forwards; }
+.yenai-film-frame span { position: absolute; white-space: nowrap; overflow: hidden; }
+.yenai-frame-top, .yenai-frame-bottom { left: 20px; right: 20px; text-align: center; }
+.yenai-frame-top { top: 0; }
+.yenai-frame-bottom { bottom: 0; transform: rotate(180deg); }
+.yenai-frame-left, .yenai-frame-right { top: 35px; bottom: 60px; writing-mode: vertical-rl; text-align: center; }
+.yenai-frame-left { left: 0; transform: rotate(180deg); }
+.yenai-frame-right { right: 0; }
+@keyframes yenai-script-morph {
+  0% { opacity: 1; transform: skewX(-9deg) scale(1); filter: blur(0); }
+  45% { opacity: .35; filter: blur(5px); }
+  70% { opacity: 0; filter: blur(8px); }
+  100% { opacity: 0; transform: skewX(0) scale(1.62); filter: blur(8px); }
+}
+@keyframes yenai-type-morph {
+  0% { opacity: 0; transform: skewX(-9deg) scale(.56); filter: blur(8px); letter-spacing: -.06em; }
+  40% { opacity: 0; }
+  100% { opacity: 1; transform: skewX(0) scale(1); filter: blur(0); letter-spacing: .025em; }
+}
+@keyframes yenai-satin-appear { to { opacity: 1; } }
+@keyframes yenai-satin-flow {
+  from { transform: scale(1.18) translateY(-2%); }
+  to { transform: scale(1.03) translateY(1%); }
+}
+@media (max-width: 600px) {
+  .yenai-film-frame { inset: 16px; font-size: 7px; letter-spacing: 1.5px; }
+  .yenai-satin-title { width: 79vw; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .yenai-satin-scene, .yenai-satin-image, .yenai-satin-title, .yenai-film-frame { animation: none; }
+}
+
+.yenai-satin-title svg { display: block; width: 100%; height: auto; }
+.yenai-intro-sound { left: max(28px, env(safe-area-inset-left)); right: auto; }
+@media (max-width: 600px) {
+  .yenai-intro-skip, .yenai-intro-sound { font-size: 10px; letter-spacing: 1px; bottom: max(32px, env(safe-area-inset-bottom)); }
+  .yenai-intro-sound { left: 20px; }
+  .yenai-intro-skip { right: 20px; }
+}
