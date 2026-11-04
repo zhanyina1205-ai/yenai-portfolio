@@ -9,6 +9,5 @@ export function IpNoteBreakdown() {
       <h5>{note.headline}</h5><div className="ip-frame-strip">{note.frames.map(frame => <figure key={frame.image}><div><img src={assetPath(`/ip-case-study/frame-${String(frame.image).padStart(2,"0")}.jpg`)} alt={frame.caption} loading="lazy" width={400} height={711}/><span>{frame.time}</span></div><figcaption>{frame.caption}</figcaption></figure>)}</div>
       <p className="ip-breakdown-takeaway">{note.takeaway}</p><p className="ip-breakdown-action"><span>看完之后</span>{note.action}</p>
     </article>)}</div>
-    <p className="ip-breakdown-footnote">画面来自对应笔记，时间点为约数。拆解是基于内容与评论的观察，不将单一设计直接归因为爆款原因。</p>
   </section>;
 }
