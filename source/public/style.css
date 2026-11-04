@@ -29,3 +29,8 @@ dialog{position:fixed;inset:0;margin:0;width:100vw;height:100dvh;max-width:none;
 /* Navigate to the original full portfolio pages after the reference animation. */
 body::after{content:"";position:fixed;inset:0;background:#111110;opacity:0;pointer-events:none;z-index:1000;transition:opacity .24s ease}body.opening-work::after{opacity:1;pointer-events:auto}
 @media(prefers-reduced-motion:reduce){body::after{transition:none}}
+
+/* Restore the original pink interlude between the tea-table scenes. */
+.page-curtain{display:flex;visibility:hidden;transform:translateY(105%)}
+.page-curtain.is-transitioning{visibility:visible;pointer-events:auto}
+.scene{transition:none}

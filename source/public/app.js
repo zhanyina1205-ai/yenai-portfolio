@@ -48,16 +48,36 @@ picks.map(p=>p.title).forEach((label,i)=>{
 });
 function announce(text){clearTimeout(toastTimer);const box=$('.live-message');box.textContent=text;box.classList.add('visible');toastTimer=setTimeout(()=>box.classList.remove('visible'),2400)}
 async function navigate(page){
-  if(busy||page===current)return;busy=true;stage.classList.add('busy');
-  const prior=$(`#${current}`),next=$(`#${page}`);
-  window.scrollTo(0,0);
-  next.classList.add('active');next.inert=false;prior.inert=true;next.style.zIndex='2';prior.style.zIndex='1';
-  const fade=next.animate([{opacity:0},{opacity:1}],{duration:reduced?1:340,easing:'ease-in-out',fill:'forwards'});
-  await fade.finished;prior.classList.remove('active');prior.style.zIndex='';next.style.zIndex='';fade.cancel();current=page;
-  paintNavigation(page);
-  history.replaceState(null,'',`#${page}`);
-  busy=false;stage.classList.remove('busy');
-  const focusTarget=$('.hotspot',next);focusTarget?.focus({preventScroll:true});
+  if(busy||page===current||!['home','tea','cake'].includes(page))return;
+  busy=true;stage.classList.add('busy');stage.setAttribute('aria-busy','true');
+  const prior=$(`#${current}`),next=$(`#${page}`),curtain=$('.page-curtain'),animations=[];
+  const switchScene=()=>{
+    prior.classList.remove('active');prior.inert=true;
+    next.classList.add('active');next.inert=false;
+    current=page;paintNavigation(page);history.replaceState(null,'',`#${page}`);
+  };
+  try{
+    window.scrollTo(0,0);
+    if(reduced){switchScene();return}
+    stage.dataset.transition=page;
+    curtain.classList.add('is-transitioning');curtain.dataset.phase='entering';
+    const enter=curtain.animate([{transform:'translateY(105%)'},{transform:'translateY(0)'}],{duration:380,easing:'cubic-bezier(.65,0,.35,1)',fill:'forwards'});
+    animations.push(enter);
+    // Keep the old scene covered until the destination illustration is ready.
+    await Promise.all([enter.finished,$('.scene-art',next).decode().catch(()=>{})]);
+    curtain.dataset.phase='covered';
+    switchScene();
+    await pause(150);
+    curtain.dataset.phase='leaving';
+    const leave=curtain.animate([{transform:'translateY(0)'},{transform:'translateY(-105%)'}],{duration:420,easing:'cubic-bezier(.65,0,.35,1)',fill:'forwards'});
+    animations.push(leave);await leave.finished;
+  }finally{
+    animations.forEach(animation=>animation.cancel());
+    curtain.classList.remove('is-transitioning');delete curtain.dataset.phase;
+    delete stage.dataset.transition;stage.removeAttribute('aria-busy');
+    busy=false;stage.classList.remove('busy');
+    $('.hotspot',next)?.focus({preventScroll:true});
+  }
 }
 function paintNavigation(page){
   $$('.page-dot').forEach(b=>{const chosen=b.dataset.go===page;b.classList.toggle('selected',chosen);if(chosen)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});

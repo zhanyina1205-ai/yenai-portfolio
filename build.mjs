@@ -1,6 +1,7 @@
 import {spawnSync} from 'node:child_process';
 import {mkdir,cp,copyFile,readFile,writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
 const root=new URL('./',import.meta.url),source=new URL('source/',root),site=new URL(`${process.env.BUILD_OUTPUT_DIR || 'site'}/`,root);
 const base=(process.env.NEXT_PUBLIC_BASE_PATH || '').replace(/\/$/,'');
 if(base && !/^\/[a-zA-Z0-9_-]+$/.test(base))throw new Error('Invalid portfolio base path');
@@ -16,7 +17,12 @@ for(const route of ['about','liangliang','accounts','rock','montirivers','tools'
   await mkdir(folder,{recursive:true});
   await copyFile(new URL(`dist/client/${route}.html`,source),new URL('index.html',folder));
 }
-const entrance=(await readFile(new URL('tea/index.html',source),'utf8')).replace('<meta name="portfolio-base" content="">',`<meta name="portfolio-base" content="${base}">`);
+let entrance=(await readFile(new URL('tea/index.html',source),'utf8')).replace('<meta name="portfolio-base" content="">',`<meta name="portfolio-base" content="${base}">`);
+// Version the entrance assets so a new release cannot reuse an older hidden transition.
+for(const asset of ['app.js','style.css']){
+  const version=createHash('sha256').update(await readFile(new URL(`tea/${asset}`,source))).digest('hex').slice(0,12);
+  entrance=entrance.replace(`"${asset}"`,`"${asset}?v=${version}"`);
+}
 await writeFile(new URL('index.html',site),entrance);
 await writeFile(new URL('.nojekyll',site),'');
 console.log('椰奶作品集已生成：'+fileURLToPath(site));
