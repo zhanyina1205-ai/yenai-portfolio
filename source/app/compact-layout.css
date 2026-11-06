@@ -3,7 +3,6 @@
 .ip-gender-panel,.ip-region-panel,.yenai-portrait-data,.yenai-regions{background:#faf4ec;border:1px solid #d9c6bd;border-radius:16px;padding:20px}
 .ip-gender-panel{border-radius:70px 70px 16px 16px}
 .ip-gender-chart>div,.yenai-gender-ring>div{background:#faf4ec}
-.ip-region-track.fashion i,.ip-chart-legend span+span:before{background:#765b65}
 .ip-region-track i{border-radius:20px}
 .yenai-age-track i:last-child{background:#765b65}
 .yenai-needs>div{border-top:2px solid var(--rose);padding-top:10px}
