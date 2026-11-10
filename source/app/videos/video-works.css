@@ -15,6 +15,10 @@
   border-radius: 5px 25px 5px 5px;
 }
 
+.video-work + .video-work {
+  margin-top: 24px;
+}
+
 .video-work-player {
   display: block;
   width: 100%;
@@ -25,8 +29,7 @@
   border-radius: 4px;
 }
 
-.video-work-index,
-.video-work-next {
+.video-work-index {
   font-size: 10px;
   letter-spacing: 1px;
 }
@@ -39,16 +42,6 @@
 
 .video-work-copy p {
   color: #765764;
-}
-
-.video-work-next {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  margin-top: 18px;
-  padding: 14px 16px;
-  border: 1px dashed #756267;
-  color: var(--pink);
 }
 
 @media (max-width: 680px) {
