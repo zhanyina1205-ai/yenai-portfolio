@@ -8,7 +8,7 @@ export const modules = [
   {slug:'montirivers',number:'05',title:'MontiRivers 山河集',en:'A poem in gold',description:'参与初创品牌从 0 到 1 的内容建设。',tags:'品牌策略 / 内容运营 / 店员矩阵',className:'directory-brand',group:'tea'},
   {slug:'tools',number:'01',title:'我的小工具',en:'Little helpers',description:'把生活里的小需求，做成好用的小东西。',tags:'穿搭手记 / 爪爪日记 / 选题雷达 / 素材小助手',className:'directory-tools',group:'cake'},
   {slug:'aigc',number:'02',title:'我的 AIGC',en:'An imagination in progress',description:'两个作品位，等待新的创作。',tags:'AIGC / 作品待补充',className:'directory-about',group:'cake'},
-  {slug:'videos',number:'03',title:'我的剪辑作品',en:'Stories in motion',description:'两个视频作品位，等待新的故事。',tags:'视频剪辑 / 作品待补充',className:'directory-about',group:'cake'},
+  {slug:'videos',number:'03',title:'我的剪辑作品',en:'Stories in motion',description:'普通人3步学穿搭。',tags:'视频剪辑 / 穿搭',className:'directory-about',group:'cake'},
 ];
 
 const folderLabels = modules.map(m=>m.title);
@@ -20,7 +20,7 @@ function FolderImage({slug}:{slug:string}) {
     about: ['/new-document/about-portrait-dog.jpg','詹依娜与小狗'],
     rock: ['/rock-account/note-2.jpg','摇滚椰奶冻的饰品'],
     aigc: ['/new-document/portrait-cover-clean.png','创作档案'],
-    videos: ['/new-document/ip-cover.png','创作档案'],
+    videos: ['/video-works/learn-styling-cover.png','普通人3步学穿搭'],
     liangliang: ['/new-document/ip-cover.png','是亮亮的户外人像'],
     montirivers: ['/montirivers/brand-1.jpg','山河集品牌形象'],
   };

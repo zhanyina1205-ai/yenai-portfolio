@@ -12,7 +12,7 @@ let count=0;
 for(const [route,html] of pages){
   assert.match(html,/<title>[^<]*椰奶作品集/);
   if(route!=='/')assert.match(html,/<h1\b/);
-  for(const [,reference] of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){
+  for(const [,reference] of html.matchAll(/\b(?:href|src|poster)="([^"]+)"/g)){
     if(/^(?:data:|mailto:|https?:|tel:)/.test(reference))continue;
     const url=new URL(reference,`https://example.com${base}${route}`);
     assert.ok(url.pathname.startsWith(`${base}/`),`Escapes site base: ${route} ${reference}`);
@@ -29,5 +29,5 @@ assert.ok(script.includes('location.assign(`${portfolioBase}${item.url}`)'));
 for(const route of routes.slice(1))assert.ok(script.includes(`url:'${route}'`),`Missing interaction destination ${route}`);
 assert.ok(!pages.get('/accounts/').includes('id="rock-account"'));
 assert.ok(pages.get('/rock/').includes('id="rock-account"'));
-for(const route of ['/aigc/','/videos/'])assert.equal([...pages.get(route).matchAll(/class="coming-card"/g)].length,2);
+assert.equal([...pages.get('/aigc/').matchAll(/class="coming-card"/g)].length,2);
 console.log(`Verified ${pages.size} pages and ${count} local links/assets under ${base || '/'}.`);
