@@ -34,3 +34,35 @@ body::after{content:"";position:fixed;inset:0;background:#111110;opacity:0;point
 .page-curtain{display:flex;visibility:hidden;transform:translateY(105%)}
 .page-curtain.is-transitioning{visibility:visible;pointer-events:auto}
 .scene{transition:none}
+
+/* Keep the table's destinations visible before a visitor hovers. */
+.entrance-guide{position:absolute;z-index:4;border:0;border-left:1px solid #f3c4cf88;background:#111110d9;color:var(--pink);padding:10px 14px;text-align:left;border-radius:2px;transition:background .2s}
+.entrance-guide:hover,.entrance-guide:focus-visible{background:#302029}
+.entrance-guide strong,.entrance-guide>span,.entrance-guide small{display:block}
+.entrance-guide strong{font-size:clamp(11px,1.15vw,18px);font-weight:500;letter-spacing:1px}
+.entrance-guide strong span{display:inline-block;font-size:1.3em}
+.entrance-guide>span{font-size:clamp(9px,.8vw,13px);color:#f4e8e2;margin-top:3px}
+.entrance-guide small{font-size:clamp(8px,.7vw,11px);color:#bfa9b0;margin-top:5px}
+.guide-cake{left:3%;top:81%}
+.guide-tea{right:2%;top:54%}
+.module-label{position:absolute;left:50%;top:96%;transform:translateX(-50%);display:block;width:max-content;max-width:135%;padding:6px 10px;background:#111110e8;border:1px solid #f3c4cf66;border-radius:3px;color:#fff3ed;line-height:1.5;text-align:center;transition:border-color .2s,background .2s}
+.module-label small{display:block;font-size:clamp(7px,.65vw,11px);letter-spacing:.7px;color:var(--pink)}
+.module-label strong{display:block;font-size:clamp(9px,.9vw,15px);font-weight:400;white-space:nowrap}
+.module-label strong span{color:var(--pink)}
+.hotspot:hover .module-label,.hotspot:focus-visible .module-label{border-color:var(--pink);background:#302029}
+.slice .module-label{top:100%;max-width:none;padding:7px 9px}
+@media(max-width:600px){
+  .entrance-guide{padding:5px 7px}
+  .entrance-guide strong{font-size:9px;letter-spacing:0}
+  .entrance-guide>span{font-size:7px;max-width:110px}
+  .entrance-guide small{display:none}
+  .guide-cake{left:2%;top:79%}
+  .guide-tea{right:1%;top:51%}
+  .module-label{padding:3px 4px;max-width:none}
+  .module-label small{font-size:6px;letter-spacing:0}
+  .module-label strong{font-size:7px}
+  .cup .module-label{width:100%;max-width:100%}
+  .cup .module-label strong{white-space:normal}
+  .slice .module-label{width:94%;padding:3px 2px}
+  .slice .module-label strong{font-size:6px;white-space:normal}
+}
