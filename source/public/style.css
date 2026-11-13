@@ -63,6 +63,6 @@ body::after{content:"";position:fixed;inset:0;background:#111110;opacity:0;point
   .module-label strong{font-size:7px}
   .cup .module-label{width:100%;max-width:100%}
   .cup .module-label strong{white-space:normal}
-  .slice .module-label{width:94%;padding:3px 2px}
+  .slice .module-label{width:84%;padding:3px 2px}
   .slice .module-label strong{font-size:6px;white-space:normal}
 }
