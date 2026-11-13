@@ -36,12 +36,15 @@ body::after{content:"";position:fixed;inset:0;background:#111110;opacity:0;point
 .scene{transition:none}
 
 /* Small captions beneath the original entrance notes and objects. */
-.entrance-note small{display:block;margin-top:3px;font-size:clamp(8px,.72vw,12px);font-weight:400;letter-spacing:.5px;color:#d8b5c0}
-.module-label{position:absolute;left:50%;top:96%;transform:translateX(-50%);display:block;width:max-content;max-width:135%;color:#754455;font-size:clamp(9px,.85vw,14px);line-height:1.5;font-weight:400;text-align:center;white-space:nowrap;text-shadow:0 1px 2px #fff5eb}
-.slice .module-label{top:100%;max-width:none}
+.entrance-note small{display:block;margin-top:5px;font-size:clamp(8px,.8vw,13px);font-weight:400;letter-spacing:2px;color:#e6becb}
+.note-tea{right:3%;text-align:right}
+.note-cake small{padding-left:1px}
+.module-label{position:absolute;left:50%;top:96%;transform:translateX(-50%);display:block;width:max-content;max-width:135%;color:#744957;font-family:'Songti SC','Noto Serif CJK SC','STSong',serif;font-size:clamp(10px,.98vw,16px);line-height:1.6;font-weight:500;letter-spacing:1px;text-align:center;white-space:nowrap}
+.cup:nth-child(n+4) .module-label{top:94%}
+.slice .module-label{top:102%;max-width:none}
 @media(max-width:600px){
-  .entrance-note small{font-size:6px;letter-spacing:0}
-  .module-label{font-size:7px}
+  .entrance-note small{font-size:7px;letter-spacing:1px;margin-top:2px}
+  .module-label{font-size:7px;letter-spacing:.2px}
   .cup .module-label{width:100%;max-width:100%;white-space:normal}
   .slice .module-label{width:84%;font-size:6px;white-space:normal}
 }
