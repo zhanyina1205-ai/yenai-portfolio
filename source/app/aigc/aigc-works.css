@@ -1,0 +1,13 @@
+.aigc-work-player {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: #111110;
+  margin: 22px 0 23px;
+}
+
+.aigc-works .coming-canvas {
+  aspect-ratio: 3 / 4;
+}
