@@ -37,13 +37,13 @@ $('#home').addEventListener('pointermove',e=>{
 cupPositions.forEach(([x,y],i)=>{
   const b=document.createElement('button'); b.className='hotspot cup'; b.style.cssText=`left:${x}%;top:${y}%;--i:${i}`;
   b.setAttribute('aria-label',`第${i+1}杯：${cupLabels[i]}，点击倒茶并打开作品`);
-  b.innerHTML=`<span class="steam" aria-hidden="true"><i></i><i></i><i></i></span><span class="module-label"><small>0${i+1} / ${['关于我','达人 IP 运营','个人账号','个人账号','品牌运营'][i]}</small><strong>${cupLabels[i]} <span>↗</span></strong></span>`;
+  b.innerHTML=`<span class="steam" aria-hidden="true"><i></i><i></i><i></i></span><span class="cup-number" aria-hidden="true">0${i+1}</span><span class="tip">${cupLabels[i]}<b>为这一杯注入灵感 ↗</b></span><span class="module-label">${cupLabels[i]}</span>`;
   b.addEventListener('click',()=>pour(i,b));$('#cups').append(b);
   addLift(b,$('#tea'),x,y,`ellipse(10% 14% at ${x}% ${y}%)`);
 });
 picks.map(p=>p.title).forEach((label,i)=>{
   const b=document.createElement('button');b.className=`hotspot slice slice-${['one','two','three'][i]}`;b.setAttribute('aria-label',`第${i+1}块蛋糕：${label}`);
-  b.innerHTML=`<span class="module-label"><small>0${i+1} / ${['TOOLS','AIGC','VIDEO'][i]}</small><strong>${label} <span>↗</span></strong></span>`;
+  b.innerHTML=`<span class="tip">${label}<b>尝一块创作 ↗</b></span><span class="module-label">${label}</span>`;
   b.addEventListener('click',()=>pickCake(i,b));$('#slices').append(b);
 });
 function announce(text){clearTimeout(toastTimer);const box=$('.live-message');box.textContent=text;box.classList.add('visible');toastTimer=setTimeout(()=>box.classList.remove('visible'),2400)}
