@@ -6,10 +6,11 @@ export const metadata = { title: '我的 AIGC · 椰奶作品集' };
 
 export default function Page() {
   const videoUrl = assetPath('/aigc-works/yenai-magic-show.mp4');
+  const secondVideoUrl = assetPath('/aigc-works/weekly-outfits.mp4');
   return (
     <ModuleShell slug="aigc" chapters={[
       { id: 'magic-show', label: 'Yenai’s Magic Show' },
-      { id: 'next-aigc-work', label: '下一部作品' },
+      { id: 'next-aigc-work', label: '挑战一周穿搭不重样' },
     ]}>
       <section className="coming-works aigc-works" id="coming-works" aria-labelledby="coming-title">
         <div className="coming-intro">
@@ -39,14 +40,25 @@ export default function Page() {
               <p>AIGC 影像作品 · 00:15</p>
             </div>
           </article>
-          <article className="coming-card" id="next-aigc-work" aria-label="AIGC 作品预留位 2">
-            <div className="coming-card-meta"><span>WORK / 02</span><span>待补充</span></div>
-            <div className="coming-canvas" aria-hidden="true"><span className="coming-mark">✧</span><span>IMAGINATION IN PROGRESS</span></div>
+          <article className="coming-card" id="next-aigc-work" aria-labelledby="weekly-outfits-title">
+            <div className="coming-card-meta"><span>WORK / 02</span><span>AIGC 影像</span></div>
+            <video
+              className="aigc-work-player"
+              src={secondVideoUrl}
+              poster={assetPath('/aigc-works/weekly-outfits-cover.jpg')}
+              width={720}
+              height={960}
+              controls
+              playsInline
+              preload="none"
+              aria-labelledby="weekly-outfits-title"
+            >
+              <a href={secondVideoUrl}>打开《挑战一周穿搭不重样》视频</a>
+            </video>
             <div className="coming-card-copy">
-              <span>02 / AIGC EXPLORATION</span>
-              <h3>AIGC 作品 02</h3>
-              <p>作品预留位 · 示例排版<br/>作品图、创作思路与制作过程将在完成后补充。</p>
-              <span className="coming-card-label">尚未发布</span>
+              <span>02 / AIGC FILM</span>
+              <h3 id="weekly-outfits-title">挑战一周穿搭不重样</h3>
+              <p>AIGC 影像作品 · 00:33</p>
             </div>
           </article>
         </div>
