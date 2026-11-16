@@ -3,9 +3,10 @@
 .tools-playground-intro{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #c58c9947;padding-top:15px;color:#d8c8c3}
 .tools-playground-intro p{font-size:13px}
 .tools-playground-intro>span{font-size:10px;color:#b38d98}
-.tool-portals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:15px}
+.tool-portals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));row-gap:32px;margin-top:15px}
 .tool-portal{position:relative;display:block;min-width:0;padding:0 clamp(12px,1.8vw,26px);color:var(--cream);border-radius:4px;isolation:isolate}
 .tool-portal+ .tool-portal{border-left:1px dashed #c58c9950}
+.tool-portal:nth-child(4n+1){border-left:0}
 .tool-portal-top{display:flex;align-items:center;justify-content:space-between;color:#bc9ea7;font-size:9px;letter-spacing:1.3px}
 .tool-portal-top>span:last-child{font-size:23px;color:var(--pink);line-height:1}
 .tool-portal-art{position:relative;height:clamp(235px,36svh,360px);margin:5px 0 10px;display:flex;align-items:center;justify-content:center}

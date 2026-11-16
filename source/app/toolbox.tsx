@@ -20,12 +20,20 @@ const tools = [
     href: assetPath("/downloads/material-helper-5.0.dmg"), download: "素材小助手-5.0.dmg",
     cta: "下载 Mac 版 5.0",
   },
+  {
+    id: "05", kind: "motion", label: "FOR MY NEXT MOTION",
+    title: "ZYN 镜头库", english: "Small moves, lovely moments.",
+    description: "收藏喜欢的动效，让下一次创作有迹可循。",
+    tags: "动效预览 / 镜头模板 / 参数参考",
+    image: "/toolbox-visuals/motion-library.svg", alt: "粉色场记板和叠放的镜头卡片，卡片上绘有播放按钮与运动曲线",
+    href: "https://zhanyina1205-ai.github.io/zyn-motion-library/", cta: "打开镜头库",
+  },
 ];
 
 export function Toolbox() {
   return <section className="toolbox-section tools-playground" id="tools" aria-labelledby="tools-title">
     <h2 className="sr-only" id="tools-title">我的小工具</h2>
-    <div className="tools-playground-intro"><p>从日常记录到选题和素材收藏，我常用的小工具。</p><span>点击插画，打开工具或下载安装包</span></div>
+    <div className="tools-playground-intro"><p>从日常记录到选题、素材收藏和动效参考，我常用的小工具。</p><span>点击插画，打开工具或下载安装包</span></div>
     <div className="tool-portals">{tools.map(tool => <a className={`tool-portal tool-portal-${tool.kind}`} key={tool.id} href={tool.href} download={tool.download} target={tool.download ? undefined : "_blank"} rel={tool.download ? undefined : "noopener noreferrer"} aria-label={`${tool.title}：${tool.cta}${tool.download ? "（DMG 安装包）" : "（新窗口）"}`}>
       <div className="tool-portal-top"><span>{tool.id} / {tool.label}</span><span aria-hidden="true">✳</span></div>
       <div className="tool-portal-art"><span className="tool-portal-script" aria-hidden="true">{tool.english}</span><img src={assetPath(tool.image)} alt={tool.alt} width={1280} height={1280}/></div>

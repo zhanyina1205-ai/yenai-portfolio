@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <title>ZYN 镜头库</title>
+  <defs>
+    <linearGradient id="paper" x1="90" y1="120" x2="420" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#fff0e8"/><stop offset=".5" stop-color="#f3c4cf"/><stop offset="1" stop-color="#c58c99"/></linearGradient>
+    <linearGradient id="frame" x1="100" y1="140" x2="400" y2="420" gradientUnits="userSpaceOnUse"><stop stop-color="#f9dbe1"/><stop offset="1" stop-color="#8f6575"/></linearGradient>
+    <linearGradient id="screen" x1="160" y1="210" x2="360" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#49343f"/><stop offset="1" stop-color="#201e25"/></linearGradient>
+  </defs>
+  <g transform="rotate(9 270 280)">
+    <rect x="145" y="140" width="270" height="270" rx="18" fill="#ba879b" stroke="#f5d3dc" stroke-width="3"/>
+    <rect x="162" y="160" width="236" height="229" rx="10" stroke="#f8dce3" stroke-dasharray="6 7"/>
+  </g>
+  <g transform="rotate(-7 245 275)">
+    <rect x="95" y="155" width="290" height="263" rx="22" fill="url(#frame)" stroke="#f2d6dc" stroke-width="3"/>
+    <rect x="102" y="160" width="276" height="249" rx="18" fill="url(#paper)"/>
+    <path d="M105 162H376V209H105Z" fill="#332831"/>
+    <path d="M137 162L114 209M201 162L178 209M265 162L242 209M329 162L306 209M376 169L356 209" stroke="#f3c4cf" stroke-width="22"/>
+    <g transform="rotate(-14 108 155)">
+      <rect x="102" y="111" width="276" height="39" rx="6" fill="#f3c4cf" stroke="#eecfd7" stroke-width="2"/>
+      <path d="M152 112L132 149M216 112L196 149M280 112L260 149M344 112L324 149" stroke="#332831" stroke-width="22"/>
+    </g>
+    <circle cx="119" cy="182" r="7" fill="#c58c99" stroke="#fff0e8" stroke-width="2"/>
+    <rect x="123" y="228" width="234" height="119" rx="10" fill="url(#screen)" stroke="#936878" stroke-width="2"/>
+    <circle cx="239" cy="279" r="27" fill="#f3c4cf"/>
+    <path d="M233 265L253 279L233 293Z" fill="#44323c"/>
+    <path d="M143 329H337M154 329C211 329 245 320 320 246" stroke="#e7adbf" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="154" cy="329" r="4" fill="#fbe6eb"/><circle cx="320" cy="246" r="4" fill="#fbe6eb"/>
+    <path d="M127 372H352" stroke="#b27b91" stroke-width="2"/>
+    <path d="M159 365L166 372L159 379L152 372ZM240 365L247 372L240 379L233 372ZM321 365L328 372L321 379L314 372Z" fill="#956479"/>
+  </g>
+  <path d="M410 78C412 95 418 101 435 103C418 105 412 111 410 128C408 111 402 105 385 103C402 101 408 95 410 78Z" fill="#f3c4cf"/>
+</svg>
