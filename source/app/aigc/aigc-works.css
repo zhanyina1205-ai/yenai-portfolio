@@ -1,3 +1,22 @@
+.aigc-works {
+  max-width: 920px;
+  margin-inline: auto;
+  padding-bottom: 32px;
+}
+
+.aigc-works .coming-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2.5vw, 24px);
+}
+
+.aigc-works .coming-card {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  padding: clamp(16px, 2.5vw, 24px);
+  border-radius: 5px 25px 5px 5px;
+}
+
 .aigc-work-player {
   display: block;
   width: 100%;
@@ -5,82 +24,26 @@
   aspect-ratio: 3 / 4;
   object-fit: contain;
   background: #111110;
-  margin: 22px 0 23px;
+  border-radius: 4px;
 }
 
-@media (min-width: 761px) and (min-height: 600px) {
-  .module-aigc .portfolio-header {
-    min-height: 62px;
-    padding-block: 0;
-  }
+.aigc-works .coming-card-copy h3 {
+  margin: 12px 0;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.25;
+}
 
-  .module-aigc .portfolio-nav {
-    order: 0;
-    width: auto;
-  }
+.aigc-works .coming-card-copy p {
+  font-size: 13px;
+  line-height: 1.6;
+}
 
-  .module-aigc .module-page-heading {
-    padding-block: 12px 16px;
-  }
-
-  .module-aigc .module-page-heading h1 {
-    font-size: 28px;
-    margin-block: 8px 10px;
-  }
-
-  .module-aigc .module-page-heading h1 > span {
-    font-size: 30px;
-  }
-
-  .aigc-works .coming-intro {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px 24px;
-    padding: 0 0 16px;
-  }
-
-  .aigc-works .coming-script {
-    font-size: 32px;
-    margin: 0;
-  }
-
-  .aigc-works .coming-intro h2 {
-    font-size: 24px;
-    margin: 0;
-  }
-
-  .aigc-works .coming-intro > p:not(.coming-script) {
-    font-size: 11px;
-    margin: 0;
+@media (max-width: 680px) {
+  .aigc-works {
+    max-width: 428px;
   }
 
   .aigc-works .coming-grid {
-    width: min(100%, 880px, calc(150svh - 570px));
-    margin-inline: auto;
-    gap: 24px;
-  }
-
-  .aigc-works .coming-card {
-    padding: 14px 16px;
-  }
-
-  .aigc-works .coming-card-meta {
-    padding-bottom: 8px;
-  }
-
-  .aigc-works .aigc-work-player {
-    margin-block: 10px;
-  }
-
-  .aigc-works .coming-card-copy h3 {
-    font-size: clamp(16px, 1.6vw, 22px);
-    line-height: 1.4;
-    margin-block: 6px;
-  }
-
-  .aigc-works .coming-card-copy p {
-    font-size: 10px;
-    margin: 0;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
