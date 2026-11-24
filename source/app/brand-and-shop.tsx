@@ -83,7 +83,7 @@ return <article className="monti-case" id="montirivers" aria-labelledby="monti-t
     <div className="monti-backstage-layout">
       <header className="monti-backstage-heading"><p className="case-script">Behind the scenes.</p><h4 id="monti-backstage-title">拍摄花絮<span>与品牌现场</span></h4><p>从自然里的影像，<br/>到门店里的一杯下午茶。</p><span className="monti-backstage-mark" aria-hidden="true">✳</span><small>点击相片，查看大图 ↗</small></header>
       <div className="monti-backstage-photos">
-        <figure><DocumentMedia src="/montirivers/behind-scenes/meadow-shoot.jpg" alt="山河集外景拍摄花絮：模特与摄影师，原片经 AI 扩图调整构图" label="放大相片"/><figcaption><span>01 / ON LOCATION</span><h5>拍摄花絮</h5><p>自然场景里的品牌影像</p></figcaption></figure>
+        <figure><DocumentMedia src="/montirivers/behind-scenes/meadow-shoot-original.png" alt="山河集外景拍摄花絮：身穿白裙的模特在草地上拍摄" label="放大相片"/><figcaption><span>01 / ON LOCATION</span><h5>拍摄花絮</h5><p>自然场景里的品牌影像</p></figcaption></figure>
         <figure><DocumentMedia src="/montirivers/behind-scenes/tangsuo-afternoon-tea.jpg" alt="达人探店时品牌合作的瑭所下午茶" label="放大相片"/><figcaption><span>02 / BRAND COLLABORATION</span><h5>瑭所下午茶</h5><p>达人探店时的品牌合作</p></figcaption></figure>
       </div>
     </div>
