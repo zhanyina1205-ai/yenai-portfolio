@@ -3,8 +3,6 @@ import { assetPath } from "./asset-path";
 import { DocumentMedia } from "./document-media";
 
 const external = { target: "_blank", rel: "noopener noreferrer" };
-const brandSource = "https://mcn7qru2e05g.feishu.cn/docx/EXhUdHPiZokwf5x6XAuc8cirnah";
-const matrixSource = "https://gcn0sluri72f.feishu.cn/docx/Apo4dK2l8oVlA4xaOL5ciDAbnag";
 const rockNotes = [
   { title: "欧米加…十字架项链🖤也太百搭了吧‼️", href: "AmVnXFs8V9C", likes: "1,128", saves: "343", tag: "一条项链，多套搭配" },
   { title: "十字架项链搭小吊带也太辣啦🥵", href: "8MASvhj1rwe", likes: "1,397", saves: "510", tag: "上身实拍，直接种草" },
@@ -94,8 +92,6 @@ return <article className="monti-case" id="montirivers" aria-labelledby="monti-t
     <div className="case-meta"><span>ONE BRAND / SIX VOICES</span><span>店员账号展示样本</span></div>
     <header className="monti-heading"><div><p className="case-script">Closer to people.</p><h4>让品牌，有人回应。</h4></div><p>官方号建立审美，顾问号补充实戴与选购。<br/>把内容与深圳门店连接起来。</p></header>
     <div className="monti-matrix-layout"><div className="monti-store"><DocumentMedia src="/montirivers/brand-2.jpg" alt="山河集深圳平安金融中心门店与黄金陈列"/><div className="monti-matrix-totals"><span><b>6</b>个账号样本</span><span><b>1,165</b>粉丝加总</span><span><b>5,849</b>赞藏加总</span></div><div className="monti-route"><h5>我设计的内容承接路径</h5><p>内容种草 <i>→</i> 进入主页 <i>→</i> 私信 / 顾问<br/>到店看货 <i>→</i> 晒单回流</p><small>路径设计，非已验证的成交漏斗</small></div><div className="monti-signal"><span>可见的需求信号</span><p>“多少钱？” “足金还是 18K？” “怎么买？”</p><small>公开评论已经出现选购提问；下一步是把咨询承接做好。</small></div></div><div className="monti-staff-grid">{staff.map((s,i)=><a key={s.name} href={`https://www.xiaohongshu.com/user/profile/${s.id}`} {...external}><div className="monti-staff-top"><span>0{i+1}</span><b>{s.name}</b><i>↗</i></div><p>{s.label}</p><div className="monti-staff-bar" role="img" aria-label={`${s.name}：${s.fans}粉丝`}><i style={{width:`${s.fans/612*100}%`}}/></div><div className="monti-staff-values"><span><b>{s.fans}</b> 粉丝</span><span><b>{s.likes}</b> 赞藏</span></div></a>)}</div></div>
-    <div className="monti-matrix-bottom"><p><b>我留下的下一步：</b>统一品牌名称与门店入口，让不同顾问号提供不同的选购价值。</p><a href={matrixSource} {...external}>看店员账号分析 ↗</a></div>
-    <details className="case-source"><summary>资料来源与统计说明</summary><p>六号数据核查于 2026.11.01，粉丝简单相加、未去重；赞藏为平台合计项。展示当前账号快照，不等同于本人任职期间的增长成果。卡片标签概括可见主页与内容，非六号已执行的固定分工。近 10 条非置顶笔记点赞中位数为 4.5—7.5；历史高赞内容不代表日常水平。没有后台私信、预约与成交数据。</p><a href={brandSource} {...external}>品牌与起号复盘 ↗</a><a href="https://mcn7qru2e05g.feishu.cn/base/F6ZubiRN2aThz8sJ8V7cgSjanEg" {...external}>竞品资料 ↗</a><a href="https://www.jiemian.com/article/14850491.html" {...external}>品牌图片来源 ↗</a></details>
     <section className="monti-store-guidelines" id="montirivers-store-sop" aria-labelledby="monti-store-sop-title">
       <header><span>STORE GUIDELINES / 10 个店员账号</span><h5 id="monti-store-sop-title">把品牌要求，写成店员能照着拍的 SOP。</h5></header>
       <div className="monti-sop-layout">
