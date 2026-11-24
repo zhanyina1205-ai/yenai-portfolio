@@ -1,9 +1,6 @@
 .account-stats.yenai-overview-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.account-stats.yenai-overview-stats dd {
-  font: 400 clamp(25px, 2.5vw, 36px)/1.4 var(--font-numbers);
-  white-space: nowrap;
-}
-.account-stats.yenai-overview-stats dd > span { font: 400 12px/1.5 var(--font-body); }
+.account-stats.yenai-overview-stats dd{font-size:clamp(25px,2.5vw,36px);white-space:nowrap}
+.account-stats.yenai-overview-stats dd>span{font-size:12px}
 .yenai-community{margin:28px 0;padding:24px 0;border-block:1px solid #c58c9955;scroll-margin-top:20px}
 .yenai-community header>p,.yenai-operation-index{font-size:10px;letter-spacing:1.2px;color:var(--pink)}
 .yenai-community h4{font-size:clamp(22px,2.3vw,30px);font-weight:500;line-height:1.5;margin:10px 0}
