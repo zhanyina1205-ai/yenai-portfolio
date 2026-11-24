@@ -1,0 +1,50 @@
+/* Cream paper and dark ink separate the growth cards from the pink spread. */
+.yenai-origin .yenai-growth-checkpoints{gap:18px;margin:24px 0 36px}
+.yenai-origin .yenai-growth-checkpoints>div{position:relative;min-width:0;padding:18px 18px 16px;text-align:left;background:#fff9f0;border:1px solid #d8bdc4;border-radius:12px;box-shadow:0 4px 0 #b58b9826}
+.yenai-origin .yenai-growth-checkpoints>div>span{display:inline-block;padding:4px 9px;border-radius:5px;background:#282324;color:#fff9f0;font-size:10px;letter-spacing:.4px;line-height:1.6}
+.yenai-origin .yenai-growth-checkpoints strong{font-family:Georgia,'Times New Roman',serif;font-size:clamp(28px,3vw,40px);line-height:1.2;font-weight:400;letter-spacing:-1px;color:#282324;margin:20px 0 14px;white-space:nowrap}
+.yenai-origin .yenai-growth-checkpoints strong small{font-family:Arial,'PingFang SC',sans-serif;font-size:12px;letter-spacing:0;margin-left:6px}
+.yenai-origin .yenai-growth-checkpoints>div>small{display:block;font-size:11px;line-height:1.8;color:#75625d;padding-top:12px;border-top:1px solid #e6d7cf}
+.yenai-origin .yenai-growth-checkpoints>div:not(:last-child)::after{content:'↗';position:absolute;right:-20px;top:50%;bottom:auto;width:24px;height:24px;display:grid;place-items:center;transform:translateY(-50%);border:1px solid #d8bdc4;border-radius:50%;background:#fff9f0;color:#7d5061;font-size:15px;line-height:1;z-index:1}
+.yenai-origin .yenai-growth-checkpoints>div:last-child{background:#282324;border-color:#282324;box-shadow:0 4px 0 #99707e40}
+.yenai-origin .yenai-growth-checkpoints>div:last-child>span{background:#f3c4cf;color:#282324}
+.yenai-origin .yenai-growth-checkpoints>div:last-child strong{color:#f3c4cf}
+.yenai-origin .yenai-growth-checkpoints>div:last-child>small{color:#e1d1ce;border-color:#fff9f033}
+
+/* A continuous rail links four separate editorial cards. */
+.yenai-origin .yenai-timeline{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding:30px 0 0;margin:0 0 30px;list-style:none}
+.yenai-origin .yenai-timeline::before{content:'';position:absolute;top:7px;left:24px;right:24px;height:1px;background:#a77788}
+.yenai-origin .yenai-timeline li{position:relative;display:flex;flex-direction:column;min-width:0;padding:18px 16px;background:#fff9f0;border:1px solid #d8bdc4;border-radius:12px;box-shadow:0 4px 0 #b58b9826}
+.yenai-origin .yenai-timeline li::before{content:'';position:absolute;top:-27px;left:19px;width:7px;height:7px;border-radius:50%;background:#282324;box-shadow:0 0 0 4px #fff9f0}
+.yenai-origin .yenai-time-number{display:flex;flex-direction:row;align-items:center;gap:10px;color:#765963}
+.yenai-origin .yenai-time-number>span{display:grid;place-items:center;flex-shrink:0;width:30px;height:30px;background:#282324;color:#f3c4cf;border-radius:50%;font:400 15px/1 Georgia,serif}
+.yenai-origin .yenai-time-number time{font-size:10px;line-height:1.5;letter-spacing:0;font-variant-numeric:tabular-nums}
+.yenai-origin .yenai-timeline h5{font-size:17px;line-height:1.65;font-weight:500;letter-spacing:-.3px;color:#302622;margin:16px 0 10px}
+.yenai-origin .yenai-timeline p{flex:1;min-height:0;font-size:12px;line-height:1.9;color:#75625d;margin:0 0 20px}
+.yenai-origin .yenai-time-label{display:block;align-self:flex-start;max-width:100%;padding:5px 8px;background:#f3dce2;color:#73495a;border:0;border-radius:4px;font-size:10px;line-height:1.7}
+@media(min-width:1600px){
+ .yenai-origin .yenai-timeline li{padding:22px 20px}
+ .yenai-origin .yenai-timeline h5{font-size:19px}
+ .yenai-origin .yenai-timeline p{font-size:13px}
+}
+@media(max-width:1050px) and (min-width:761px){
+ .yenai-origin .yenai-timeline{grid-template-columns:repeat(2,minmax(0,1fr));padding-top:0;gap:18px}
+ .yenai-origin .yenai-timeline::before,.yenai-origin .yenai-timeline li::before{display:none}
+}
+@media(max-width:760px){
+ .yenai-origin .yenai-timeline{grid-template-columns:1fr;gap:16px;padding:0 0 0 20px;margin-bottom:25px}
+ .yenai-origin .yenai-timeline::before{top:20px;bottom:20px;left:3px;right:auto;width:1px;height:auto}
+ .yenai-origin .yenai-timeline li{padding:18px}
+ .yenai-origin .yenai-timeline li::before{left:-21px;top:25px}
+ .yenai-origin .yenai-timeline h5{font-size:18px;margin-top:14px}
+ .yenai-origin .yenai-timeline p{margin-bottom:16px}
+}
+@media(max-width:700px){
+ .yenai-origin .yenai-growth-checkpoints{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:28px}
+ .yenai-origin .yenai-growth-checkpoints>div{padding:14px 12px}
+ .yenai-origin .yenai-growth-checkpoints>div>span{font-size:9px;padding:3px 6px}
+ .yenai-origin .yenai-growth-checkpoints strong{font-size:28px;margin:17px 0 12px}
+ .yenai-origin .yenai-growth-checkpoints strong small{font-size:10px;margin-left:3px}
+ .yenai-origin .yenai-growth-checkpoints>div>small{font-size:10px;padding-top:10px}
+ .yenai-origin .yenai-growth-checkpoints>div:not(:last-child)::after{display:none}
+}
