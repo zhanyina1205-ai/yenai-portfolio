@@ -27,18 +27,24 @@ export function IpCaseContext() {
       <div className="ip-account-role-grid">
         <article aria-labelledby="ip-main-role-title">
           <header><span>01 / 抖音 · 美妆主号</span><h5 id="ip-main-role-title">是亮亮<span>陪你学化妆的闺蜜</span></h5></header>
+          <div className="ip-account-role-body">
+          <DocumentMedia className="ip-role-profile" src="/ip-case/accounts/liangliang-douyin.jpeg" alt="是亮亮的抖音主页截图" label="放大是亮亮主页"/>
           <dl>
             <div><dt>人设定位</dt><dd>像闺蜜一样陪人学化妆。全程跟练让新手看清每一步，穿搭盲盒则带出她轻松爱玩的另一面。</dd></div>
             <div><dt>观众需求</dt><dd>适合想跟着练全妆，也爱看朋友互动的观众。</dd></div>
           </dl>
+          </div>
           <div className="ip-role-metrics"><span>女性粉丝 <b>83.18%</b></span><span>获赞 <b>1.1 亿</b></span></div>
         </article>
         <article aria-labelledby="ip-fashion-role-title">
           <header><span>02 / 抖音 · 穿搭号</span><h5 id="ip-fashion-role-title">涂芷靓<span>可以对照的试衣参考</span></h5></header>
+          <div className="ip-account-role-body">
+          <DocumentMedia className="ip-role-profile" src="/ip-case/accounts/tuzhijing-douyin.jpeg" alt="涂芷靓的抖音主页截图" label="放大涂芷靓主页"/>
           <dl>
             <div><dt>人设定位</dt><dd>把自己当作试衣参照。简介写明 H 型身材，作品在同一房间展示不同造型，方便比较上身效果。</dd></div>
             <div><dt>观众需求</dt><dd>适合身形相近、想找日常搭配参考的观众。</dd></div>
           </dl>
+          </div>
           <div className="ip-role-metrics"><span>女性粉丝 <b>98.44%</b></span><span>获赞 <b>150.5 万</b></span></div>
         </article>
       </div>
