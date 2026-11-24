@@ -77,7 +77,6 @@ return <article className="monti-case" id="montirivers" aria-labelledby="monti-t
       </div>
     </section>
     <div className="monti-learning"><div><b>12,037<span>赞</span></b><b>1,643<span>藏</span></b><small>33 篇内容累计表现*</small></div><p><strong>我的复盘：</strong>品牌片获得更多互动；系列与选购内容，让“好看”更接近“想戴”。</p></div>
-    <details className="case-source"><summary>工作范围、数据与完整复盘 ↗</summary><p>职责依据个人复盘：2026 年 6—9 月在深圳市山河集文化有限公司负责内容策划与账号运营；不据此认定全部影像均为本人独立拍摄。33 篇内容累计赞藏统计于 2026.11.01；三条卡片数据核对于 2026.11.02。发布期另有 KOC 与快闪活动，不能把全部增长归因于单一内容动作。未获取曝光、投放、私信与成交数据。</p><a href={brandSource} {...external}>阅读起号与脚本复盘 ↗</a></details>
   </section>
   <section className="monti-page monti-backstage" id="montirivers-backstage" aria-labelledby="monti-backstage-title">
     <div className="case-meta"><span>BEHIND THE SCENES / MONTIRIVERS</span><span>镜头背后 · 品牌现场</span></div>
