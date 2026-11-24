@@ -38,7 +38,7 @@ export function IpCaseContext() {
         <article className="ip-process-card">
           <div className="ip-process-label"><span>02</span><h5>脚本</h5></div>
           <IpTopsScriptReader/>
-          <p>镜号 01—47 · 点击预览完整脚本</p>
+          <p>点击预览完整脚本截图 ↗</p>
         </article>
         <article className="ip-process-card"><div className="ip-process-label"><span>03</span><h5>剪映工程文档</h5></div><DocumentMedia src="/ip-case/jianying-project-01.png" alt="第一条爆款视频的剪映工程截图，展示穿搭素材、字幕分层与剪辑时间线" label="放大工程截图"/><p>点击截图，放大查看 ↗</p></article>
       </div>

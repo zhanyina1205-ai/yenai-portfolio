@@ -58,3 +58,6 @@
   .ip-shots td::before { content: attr(data-label); display: block; font-size: .85em; color: #805764; font-weight: 550; }
   .ip-shots td:first-child::before { display: inline; margin-right: .5em; }
 }
+
+.ip-script-capture{display:block;width:100%;height:auto;max-width:none}
+.ip-script-capture.enlarged{width:1800px;max-width:none}

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { assetPath } from "./asset-path";
-import script from "./ip-tops-script.json";
 
 export function IpTopsScriptReader() {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -23,32 +22,26 @@ export function IpTopsScriptReader() {
 
   return <>
     <button className="document-media ip-script-thumbnail" type="button" aria-haspopup="dialog"
-      aria-label="预览《7套夏日上衣分享合集脚本》完整分镜表"
+      aria-label="预览《出片夏日小吊带合集脚本》完整截图"
       onClick={() => { setZoom(false); setOpen(true); }}>
-      <img src={assetPath("/ip-case/script/preview.webp")} alt="分镜表开头，包含穿搭参考、画面安排与口播文案" loading="lazy" />
+      <img src={assetPath("/ip-case/script/feishu-preview.webp")} alt="飞书脚本截图，包含镜号、人物画面、搭配参考、画面安排、文案、拍摄与剪辑和服装卖点" loading="lazy" />
       <span className="media-enlarge" aria-hidden="true">↗</span>
     </button>
     <dialog ref={dialog} className="gold-reader ip-script-reader" aria-labelledby="ip-script-title"
       onCancel={event => { event.preventDefault(); setOpen(false); }}>
       {open && <div className="gold-reader-inner">
         <header>
-          <div><small>是亮亮 / 镜号 01—47</small><h2 id="ip-script-title">7套夏日上衣分享合集脚本</h2></div>
+          <div><small>是亮亮 / 脚本</small><h2 id="ip-script-title">出片夏日小吊带合集脚本</h2></div>
+          <a href="https://gcn0sluri72f.feishu.cn/wiki/GDCJwHSjQil9yikMFNmc5Afmnde" target="_blank" rel="noopener noreferrer">飞书原稿 ↗</a>
           <button type="button" aria-pressed={zoom} onClick={() => setZoom(!zoom)}>{zoom ? "还原" : "放大"}</button>
           <button type="button" className="gold-close" aria-label="关闭脚本" onClick={() => setOpen(false)}>×</button>
         </header>
         <div className="ip-script-scroll" role="region" aria-label="完整分镜表" tabIndex={0}>
-          <table className={zoom ? "ip-shots enlarged" : "ip-shots"} aria-label="夏日上衣合集逐镜脚本">
-            <thead><tr>{script.headers.map(label => <th key={label} scope="col">{label}</th>)}</tr></thead>
-            <tbody>{script.rows.map(row => <tr key={row[0].text}>
-              {row.map((cell, index) => <td key={script.headers[index]} data-label={script.headers[index]}>
-                {cell.text}
-                {cell.images?.map((image, i) => <figure key={i}>
-                  <img src={assetPath("/ip-case/script/" + image.file)} alt={image.caption} loading="lazy" />
-                  <figcaption>{image.caption}</figcaption>
-                </figure>)}
-              </td>)}
-            </tr>)}</tbody>
-          </table>
+          <img
+            className={zoom ? "ip-script-capture enlarged" : "ip-script-capture"}
+            src={assetPath("/ip-case/script/feishu-full.webp")}
+            alt="《出片夏日小吊带合集脚本》完整表格截图"
+          />
         </div>
       </div>}
     </dialog>
