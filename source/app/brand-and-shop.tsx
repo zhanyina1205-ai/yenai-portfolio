@@ -52,7 +52,10 @@ return <article className="monti-case" id="montirivers" aria-labelledby="monti-t
       <div><span>02 / 门店</span><h5>指导店员拍摄</h5><p>把品牌要求拆成具体拍摄标准，帮助店员呈现产品。</p></div>
       <div><span>03 / KOL</span><h5>审核选题、脚本与成片</h5><p>从内容方向到最终画面，核对品牌表达与产品细节。</p></div>
     </div>
-    <div className="monti-tenure-growth"><div><span>任职期间 · 官方号粉丝变化</span><p>从起步阶段，逐步积累品牌关注。</p></div><strong>约 500<small>人</small><i aria-hidden="true">→</i>2,000<small>余人</small></strong></div>
+    <div className="monti-tenure-growth">
+      <div><span>任职期间 · 官方号粉丝变化</span><p>从起步阶段，逐步积累品牌关注。</p></div>
+      <strong><small>约</small> 500 <small>人</small><i>→</i>2,000 <small>余人</small></strong>
+    </div>
     <ol className="monti-flow"><li><span>01 / 定位</span><b>先统一品牌语言</b><p>自然意象、诗化短句，确定官方号的表达。</p></li><li><span>02 / 栏目</span><b>让内容成为系列</b><p>品牌故事、系列篇、节气、戴上它的人。</p></li><li><span>03 / 发布</span><b>把节点做成组合</b><p>预告 → 正片 → 产品短片，串起一轮发布。</p></li><li><span>04 / 复盘</span><b>从好看到有用</b><p>对照赞藏与提问，把选购信息接给顾问号。</p></li></ol>
     <div className="monti-note-grid">{brandNotes.map((n,i)=><a className="monti-note" key={n.id} href={`https://www.xiaohongshu.com/explore/${n.id}`} {...external}><div className="monti-note-image"><img src={assetPath(`/montirivers/note-${i+1}.jpg`)} alt={`山河集视频封面：${n.title}`} loading="lazy"/><span className="monti-play" aria-label="打开视频笔记">↗</span><span className="monti-note-index">{n.label}</span></div><div className="monti-note-copy"><h5>{n.title}</h5><p>{n.text}</p><div className="case-note-stats"><span>♡ {n.likes}<small>赞</small></span><span>☆ {n.saves}<small>藏</small></span></div></div></a>)}</div>
     <section className="monti-process" id="montirivers-gold-process" aria-labelledby="monti-process-title">

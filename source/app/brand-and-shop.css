@@ -143,12 +143,27 @@
 .monti-role-scope>div{min-width:0}
 .monti-role-scope h5{color:#302622}
 .monti-role-scope p{color:#76655f}
-.monti-tenure-growth{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;padding:18px 22px;margin-bottom:22px;border:1px solid #c58c9950;border-radius:5px 22px 5px 5px;background:var(--pink)}
-.monti-tenure-growth>div>span{font-size:12px;color:#59454d}
-.monti-tenure-growth p{font-size:11px;color:#59454d;margin:7px 0 0}
-.monti-tenure-growth strong{font-size:clamp(27px,3vw,42px);font-weight:500;color:#302622;white-space:nowrap}
-.monti-tenure-growth small{font-size:12px;margin-left:5px}
-.monti-tenure-growth i{font-style:normal;font-size:26px;margin:0 22px;color:#c58c99}
+.monti-tenure-growth {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px 20px;
+  padding: 18px 22px;
+  margin-bottom: 22px;
+  border: 1px solid #dfc1cb;
+  border-radius: 5px 22px 5px 5px;
+  background: #f5dfe4;
+}
+.monti-tenure-growth > div > span { font-size: 12px; color: #895a6c; }
+.monti-tenure-growth p { font-size: 11px; color: #705a60; margin: 7px 0 0; }
+.monti-tenure-growth strong {
+  font: 400 clamp(27px, 2.7vw, 38px)/1.2 Georgia, serif;
+  color: #895a6c;
+  white-space: nowrap;
+}
+.monti-tenure-growth small { font: 400 12px/1.5 Arial, 'PingFang SC', sans-serif; color: #705a60; }
+.monti-tenure-growth i { font: 400 22px/1 Arial, sans-serif; margin-inline: 18px; color: #a87586; }
 .monti-store-guidelines{margin:28px 0;padding-top:22px;border-top:1px solid #cbbab0}
 .monti-store-guidelines>header>span,.monti-sop-notes article>span,.monti-staff-example div>span{font-size:10px;letter-spacing:.8px;color:#895a6c}
 .monti-store-guidelines>header>h5{font-size:clamp(22px,2.3vw,30px);font-weight:500;margin:10px 0 24px}
