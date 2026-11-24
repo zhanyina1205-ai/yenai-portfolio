@@ -73,8 +73,51 @@ export function YenaiOriginStory() {
     <div className="yenai-origin-top"><div className="yenai-origin-copy"><p className="yenai-script" aria-hidden="true">My first account.</p><h4 id="yenai-origin-title">从一面宿舍穿衣镜，<br/>到被更多人看见。</h4><div className="yenai-growth"><span>0</span><i aria-hidden="true">↗</i><span>4<small>万粉</small></span></div><p>2023 年大三开始做穿搭号。<br/>从选题、出镜到拍摄剪辑、商务对接，独立完成。</p><span className="yenai-growth-date">截至 2024.10 进入 MCN 实习时</span></div>
       <div className="yenai-story-photos"><figure><a className="document-media" href="https://xhslink.cn/o/6ug4j6sqq71" target="_blank" rel="noopener noreferrer" aria-label="在小红书打开：艺术生夏日9套辣妹穿搭合集第一弹（附链接）"><img src={assetPath("/yenai-story/summer-dorm-collection.webp")} alt="艺术生夏日9套辣妹穿搭合集第一弹，宿舍对镜拍九宫格封面" loading="lazy"/><span className="media-enlarge" aria-hidden="true">↗</span></a><figcaption><span>01 / 宿舍镜拍 · 2024.05</span>夏日 9 套辣妹穿搭合集 · 第一弹</figcaption></figure><figure><a className="document-media" href="https://xhslink.cn/o/1qqhhxRnZaW" target="_blank" rel="noopener noreferrer" aria-label="在小红书打开：欧米加网纱一字肩➕低腰工装裤真的好辣🥵"><img src={assetPath("/yenai-story/mesh-cargo-look.webp")} alt="欧米加网纱一字肩搭配低腰工装裤，黑色系宿舍对镜拍笔记封面" loading="lazy"/><span className="media-enlarge" aria-hidden="true">↗</span></a><figcaption><span>02 / 单套穿搭 · 2024.04</span>网纱一字肩＋低腰工装裤</figcaption></figure><span className="yenai-photo-note" aria-hidden="true">My mirror, my style.</span></div>
     </div>
+    <div className="yenai-growth-checkpoints" aria-label="独立运营成长节点">
+      <div><span>独立运营起点</span><strong>2023.06</strong><small>学生党人设 · 宿舍对镜拍</small></div>
+      <div><span>半年</span><strong>1<small>万粉</small></strong><small>甜辣风格 · 平价选品</small></div>
+      <div><span>一年内</span><strong>4<small>万＋粉</small></strong><small>固定场景 · 持续更新</small></div>
+      <div><span>至今</span><strong>5.2<small>万粉</small></strong><small>毕业后转向姐系与通勤</small></div>
+    </div>
     <ol className="yenai-timeline">{milestones.map((item, i) => <li key={item.date}><div className="yenai-time-number"><span>0{i + 1}</span><time>{item.date}</time></div><h5>{item.title}</h5><p>{item.text}</p><span className="yenai-time-label">{item.label}</span></li>)}</ol>
     <div className="yenai-origin-bottom"><p>我留下的方法：<b>先让人记住我，再让穿搭对她有用。</b></p><a href="#selected-notes">看我的代表内容 ↗</a></div>
     <p className="yenai-origin-source">时间线依据账号复盘资料；“万赞”指该笔记在 2026.11.01 采集时的累计点赞，非发布当日数据。<a href={source} target="_blank" rel="noopener noreferrer">资料来源 ↗</a></p>
   </section>;
+}
+
+
+export function YenaiCommunity() {
+  return (
+    <section className="yenai-community" id="yenai-community" aria-labelledby="yenai-community-title">
+      <header><p>BEYOND THE POSTS</p><h4 id="yenai-community-title">笔记之外，也一起聊穿搭。</h4><span>从公开话题，到粉丝群里的日常交流</span></header>
+      <div className="yenai-community-grid">
+        <article>
+          <span className="yenai-operation-index">01 / 粉丝社群</span>
+          <p className="yenai-community-number">500<small>＋人</small></p>
+          <h5>建立自己的粉丝群</h5>
+          <p>把笔记之外的交流留在社群里，和同样喜欢穿搭的女生聊日常、分享搭配。</p>
+        </article>
+        <article>
+          <span className="yenai-operation-index">02 / 穿搭话题</span>
+          <p className="yenai-community-number">155.2<small>万＋浏览</small></p>
+          <h5>#椰奶的ootd#</h5>
+          <p>发起自己的穿搭话题，让日常造型有一个共同的收藏入口。</p>
+        </article>
+      </div>
+    </section>
+  );
+}
+
+export function YenaiReview() {
+  return (
+    <section className="yenai-review" aria-labelledby="yenai-review-title">
+      <div className="yenai-review-copy">
+        <span className="yenai-operation-index">REVIEW & REFINE</span>
+        <h3 id="yenai-review-title">发布之后，继续复盘。</h3>
+        <p>看点赞、收藏及评论里反复出现的问题，再调整下一次的选题和搭配。</p>
+      </div>
+      <div className="yenai-review-result"><span>表现最佳的单月</span><strong>10<small>万＋赞</small></strong></div>
+      <div className="yenai-review-result"><span>点赞过千的笔记</span><strong>20<small>余篇</small></strong></div>
+    </section>
+  );
 }

@@ -3,11 +3,17 @@ import { assetPath } from "./asset-path";
 import { DocumentMedia } from "./document-media";
 import { NoteCards } from "./note-cards";
 import { Lookbook } from "./lookbook";
-import { YenaiAudience, YenaiOriginStory } from "./yenai-account-story";
+import { YenaiAudience, YenaiOriginStory, YenaiCommunity, YenaiReview } from "./yenai-account-story";
 import { AccountCollage } from "./account-collage";
 import { CopyEmail } from "./portfolio-interactions";
 
-const workflow=[{title:"选题",text:"找热门笔记作为参考依据。"},{title:"选品搭配",text:"参考热门单品，搭配成自己的风格。"},{title:"拍摄",text:"对镜拍、支架前置拍、户外拍。"},{title:"修图剪辑",text:"使用剪映、Remotion 完成内容制作。"},{title:"发布",text:"发布到小红书、抖音。"}];
+const workflow = [
+  { title: "选题", text: "先确定学生预算、通勤或旅行等场景，再找热门笔记作为参考。" },
+  { title: "选品搭配", text: "参考热门单品，试穿整套搭配，把鞋包配饰搭成自己的风格。" },
+  { title: "拍摄", text: "对镜拍、支架前置拍、户外拍；在固定场景拍全身，让上身效果更清楚。" },
+  { title: "修图剪辑", text: "使用剪映、Remotion 制作内容，按单套或合集剪辑。" },
+  { title: "发布", text: "发布到小红书、抖音。标题写出单品组合或目的地，封面展示上身效果。" },
+];
 
 
 export function Biography() {
@@ -38,11 +44,12 @@ export function Biography() {
 }
 
 export function CreationWorkflow(){return (
-   <section className="workflow-section section-pad" id="workflow" aria-labelledby="workflow-title"><div className="section-kicker"><span>03 / HOW I WORK</span><span>从选题，到发布</span></div><h2 className="display-title" id="workflow-title">我的创作流程<span>THE PROCESS</span></h2><div className="workflow-list">{workflow.map((item,index)=><article key={item.title}><span className="step-number">0{index+1}/</span><h3>{item.title}</h3><p>{item.text}</p>{index<workflow.length-1&&<span className="step-arrow" aria-hidden="true">→</span>}</article>)}</div><div className="support-grid"><div className="support-intro"><p>从品牌合作到个人创作，<br/>这些是我实际做过的工作。</p><a href={assetPath("/#tea")}>回看我的项目 <span>↗</span></a></div><div className="support-cards"><article><span>1/</span><h3>商务对接</h3><p>IP 穿搭账号<br/>PR 合作沟通</p></article><article><span>2/</span><h3>选品搭配</h3><p>服装与饰品<br/>选品、风格搭配</p></article><article><span>3/</span><h3>拍摄剪辑</h3><p>多种拍摄方式<br/>剪映 / Remotion</p></article><article><span>4/</span><h3>独立经营</h3><p>个人账号与店铺<br/>供应链、定价、上架</p></article></div></div></section>
+   <section className="workflow-section section-pad" id="workflow" aria-labelledby="workflow-title"><div className="section-kicker"><span>03 / HOW I WORK</span><span>从选题，到发布</span></div><h2 className="display-title" id="workflow-title">我的创作流程<span>THE PROCESS</span></h2><div className="workflow-list">{workflow.map((item,index)=><article key={item.title}><span className="step-number">0{index+1}/</span><h3>{item.title}</h3><p>{item.text}</p>{index<workflow.length-1&&<span className="step-arrow" aria-hidden="true">→</span>}</article>)}</div><YenaiReview/><div className="support-grid"><div className="support-intro"><p>从品牌合作到个人创作，<br/>这些是我实际做过的工作。</p><a href={assetPath("/#tea")}>回看我的项目 <span>↗</span></a></div><div className="support-cards"><article><span>1/</span><h3>商务对接</h3><p>IP 穿搭账号<br/>PR 合作沟通</p></article><article><span>2/</span><h3>选品搭配</h3><p>服装与饰品<br/>选品、风格搭配</p></article><article><span>3/</span><h3>拍摄剪辑</h3><p>多种拍摄方式<br/>剪映 / Remotion</p></article><article><span>4/</span><h3>独立经营</h3><p>个人账号与店铺<br/>供应链、定价、上架</p></article></div></div></section>
 );}
 export function PersonalAccounts({includeRock=true}:{includeRock?:boolean}){return <>
-    <article className="own-project" id="yenai-account"><div className="own-project-copy"><p className="eyebrow">02 / MY OWN ACCOUNT</p><h3>椰奶没喝饱_<span>小红书穿搭账号</span></h3><div className="style-journey"><div><span>学生时期</span><h4>美式甜心辣妹</h4><p>以学生党人设为主。</p></div><span className="journey-arrow" aria-hidden="true">↘</span><div><span>毕业之后</span><h4>姐系通勤感</h4><p>面向刚步入社会的女生，提升穿衣质感。</p></div></div><dl className="account-stats"><div><dt>粉丝</dt><dd>5.2<span>万</span></dd></div><div><dt>获赞与收藏</dt><dd>92.4<span>万</span></dd></div></dl><p className="source-note">小红书账号主页 · 2026.11.01 截图</p><a className="pink-button" href="https://xhslink.cn/o/ArBwd7GjccM" target="_blank" rel="noopener noreferrer">打开我的穿搭账号 <span>↗</span></a><nav className="yenai-account-links" aria-label="个人账号内容"><a href="#yenai-audience">我的受众 ↗</a><a href="#yenai-origin">从零起号 ↗</a></nav></div><AccountCollage/></article>
+    <article className="own-project" id="yenai-account"><div className="own-project-copy"><p className="eyebrow">02 / MY OWN ACCOUNT</p><h3>椰奶没喝饱_<span>小红书穿搭账号 · 2023.06 起独立运营</span></h3><div className="style-journey"><div><span>学生时期</span><h4>美式甜心辣妹</h4><p>学生党人设，在宿舍对镜拍适合学生预算的甜辣风穿搭。</p></div><span className="journey-arrow" aria-hidden="true">↘</span><div><span>毕业之后</span><h4>姐系通勤感</h4><p>在房间拍全身造型，选品转向姐系通勤和质感单品。</p></div></div><dl className="account-stats yenai-overview-stats"><div><dt>粉丝</dt><dd>5.2<span>万</span></dd></div><div><dt>累计浏览</dt><dd>2,000<span>万＋</span></dd></div><div><dt>获赞与收藏</dt><dd>92.4<span>万</span></dd></div></dl><p className="source-note">小红书账号主页 · 2026.11.01 截图</p><a className="pink-button" href="https://xhslink.cn/o/ArBwd7GjccM" target="_blank" rel="noopener noreferrer">打开我的穿搭账号 <span>↗</span></a><nav className="yenai-account-links" aria-label="个人账号内容"><a href="#yenai-audience">我的受众 ↗</a><a href="#yenai-origin">从零起号 ↗</a></nav></div><AccountCollage/></article>
     <YenaiAudience/>
+    <YenaiCommunity/>
     <YenaiOriginStory/>
     <Lookbook/>
     <NoteCards/>
