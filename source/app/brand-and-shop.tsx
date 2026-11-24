@@ -43,7 +43,6 @@ return <article className="monti-case" id="montirivers" aria-labelledby="monti-t
     <div className="monti-summary"><div className="monti-account-numbers"><div><b>2,074</b><span>官方号粉丝</span></div><div><b>1.56万</b><span>获赞与收藏</span></div><div><b>122</b><span>累计笔记</span></div></div><div className="monti-audience"><span>目标受众 / 策略判断</span><p>深圳都市女性 · 约 25—40 岁<br/>在意设计、东方美学与日常佩戴感</p><div><span>悦己通勤</span><span>婚嫁三金</span><span>节日赠礼</span></div></div></div>
     <div className="monti-peers monti-peers-expanded"><div><span>竞品看什么</span><h4>取方法，留住自己的调性。</h4></div><ul><li><b>寶蘭</b><span>诗化影像<br/>少发精发</span></li><li><b>琳朝</b><span>工艺叙事<br/>预告＋正片</span></li><li><b>YIN隐</b><span>当代设计<br/>定位之外要有内容</span></li><li><b>文博金</b><span>同城同期<br/>店员号矩阵</span></li><li><b>老铺黄金</b><span>金饰工艺<br/>特写呈现</span></li><li><b>君佩珠宝</b><span>设计细节<br/>试戴呈现</span></li></ul></div>
     <div className="monti-content-method"><div><span>01 / 特写</span><h5>让工艺被看清</h5><p>用特写呈现金饰的纹理与工艺，把产品细节放进品牌表达。</p></div><div><span>02 / 试戴</span><h5>让设计落在身上</h5><p>用试戴画面展示设计细节，让顾客看到佩戴比例和上身效果。</p></div></div>
-    <p className="case-caption">账号快照：2026.11.01；受众为门店位置、内容与评论推断，非后台画像。图片来自品牌公开报道。</p>
   </section>
   <section className="monti-page monti-work" id="montirivers-work">
     <div className="case-meta"><span>FROM 0 TO 1 / MY ROLE</span><span>从“产品图”，到“品牌诗集”</span></div>
