@@ -5,11 +5,12 @@
   width: fit-content;
   padding: 8px 14px;
   margin: 22px 0;
-  background: var(--pink);
+  background: var(--pink-soft);
+  color: var(--ink);
   font-size: clamp(14px, 1.4vw, 20px);
 }
 .module-about .profile-role > span {
-  color: #765764;
+  color: var(--rose-ink);
 }
 .module-about .about-summary {
   font-size: clamp(14px, 1.25vw, 18px);

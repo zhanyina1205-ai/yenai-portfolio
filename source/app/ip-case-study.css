@@ -91,7 +91,14 @@
 .ip-account-role-grid dt{font-size:11px;color:var(--pink);line-height:1.9}
 .ip-account-role-grid dd{margin:0;font-size:13px;line-height:1.9;color:#c6bdb4}
 .ip-role-metrics{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:auto;padding-top:14px;border-top:1px solid #c58c9940;font-size:11px;color:#c6bdb4}
-.ip-role-metrics b{font-size:19px;font-weight:500;color:var(--pink);margin-left:6px}
+.ip-role-metrics b { font: 400 19px/1.4 var(--font-numbers); color: var(--pink); margin-left: 6px; }
+.ip-positioning-spread .matrix-followers { font-family: var(--font-numbers); font-weight: 400; }
+.ip-positioning-spread .matrix-followers > span { font-family: var(--font-body); }
+.ip-positioning-spread .ip-account-matrix .featured-account {
+  background: var(--pink-soft);
+  border-color: var(--pink-soft-border);
+}
+.ip-positioning-spread .featured-account .matrix-followers { color: var(--rose-ink); }
 @media(max-width:700px){
   .ip-account-role-grid{grid-template-columns:1fr;gap:24px;margin-top:16px}
   .ip-account-role-grid h5{font-size:21px}

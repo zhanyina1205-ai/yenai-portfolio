@@ -8,7 +8,7 @@
 .monti-store-guidelines .monti-sop-preview>img{display:block;width:100%;height:clamp(250px,42svh,340px);max-height:none;aspect-ratio:auto;object-fit:contain;object-position:center;filter:none}
 .monti-store-guidelines .monti-sop-full-link{align-self:flex-start;font-size:10px;line-height:1.6;margin:0;padding:0 0 3px}
 .monti-store-guidelines .monti-sop-notes{grid-column:2;grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.monti-store-guidelines .monti-sop-notes article{min-width:0;padding:15px 16px;background:#efd5dc;border:1px solid #ddbec8;border-radius:11px}
+.monti-store-guidelines .monti-sop-notes article{min-width:0;padding:15px 16px;background:var(--pink-soft);border:1px solid var(--pink-soft-border);border-radius:11px}
 .monti-store-guidelines .monti-sop-notes article>span{font-size:9px;letter-spacing:.4px}
 .monti-store-guidelines .monti-sop-notes h5{font-size:16px;line-height:1.6;margin:8px 0}
 .monti-store-guidelines .monti-sop-notes p{font-size:11px;line-height:1.8;margin:9px 0 0}
