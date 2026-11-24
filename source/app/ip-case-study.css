@@ -62,6 +62,20 @@
 .ip-script-capture{display:block;width:100%;height:auto;max-width:none}
 .ip-script-capture.enlarged{width:1800px;max-width:none}
 
+.ip-research-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:24px 28px}
+.ip-research-library{grid-column:2;grid-row:1 / span 2}
+.ip-research-process .document-media{height:auto;aspect-ratio:auto;background:#fffaf4}
+.ip-research-process .document-media img{height:auto;max-height:none;object-fit:contain}
+.ip-research-process .ip-process-card>p{font-size:13px;line-height:1.85;margin-top:12px}
+.ip-research-process .ip-research-hint{font-size:11px;color:#956c7b}
+@media(max-width:700px){
+  .ip-research-grid{grid-template-columns:1fr;gap:24px}
+  .ip-research-library{grid-column:auto;grid-row:auto}
+  .ip-research-process .ip-process-label{display:flex}
+  .ip-research-process .ip-process-label h5{font-size:17px;min-height:0;margin-top:0}
+  .ip-research-process .ip-process-card>p{font-size:12px}
+}
+
 .ip-account-roles{margin-top:32px}
 .ip-account-role-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin-top:20px}
 .ip-account-role-grid>article{display:flex;flex-direction:column;border-top:1px solid #786967;padding-top:18px;min-width:0}
@@ -80,3 +94,7 @@
   .ip-account-role-grid dl>div{grid-template-columns:58px 1fr;gap:10px}
   .ip-account-role-grid dd{font-size:12px}
 }
+
+.ip-research-process .ip-research-account-preview{aspect-ratio:5 / 1}
+.ip-research-process .ip-research-work-preview{aspect-ratio:3.7 / 1}
+.ip-research-process :is(.ip-research-account-preview,.ip-research-work-preview)>img{height:100%;object-fit:cover;object-position:top left}

@@ -64,5 +64,26 @@ export function IpCaseContext() {
         <article className="ip-process-card"><div className="ip-process-label"><span>03</span><h5>剪映工程文档</h5></div><DocumentMedia src="/ip-case/jianying-project-01.png" alt="第一条爆款视频的剪映工程截图，展示穿搭素材、字幕分层与剪辑时间线" label="放大工程截图"/><p>点击截图，放大查看 ↗</p></article>
       </div>
     </section>
+    <section className="ip-editing-project ip-research-process" id="ip-research-process" aria-labelledby="ip-research-title">
+      <header><div><span>BEHIND THE SHOOT / 02</span><h4 id="ip-research-title">我怎样筛选对标账号、拆解穿搭选题</h4></div><p>从账号观察，到选题判断</p></header>
+      <div className="ip-research-grid">
+        <article className="ip-process-card">
+          <div className="ip-process-label"><span>01</span><h5>先看账号</h5></div>
+          <DocumentMedia className="ip-research-account-preview" src="/ip-case/research/research-01.webp" alt="是亮亮竞品账号分析表，包含账号体量、近30天作品数和最近一条爆款" label="放大账号分析表"/>
+          <p>对照账号体量、近 30 天作品数和最近一条爆款，选择值得持续观察的账号。</p>
+        </article>
+        <article className="ip-process-card">
+          <div className="ip-process-label"><span>02</span><h5>再看单条作品</h5></div>
+          <DocumentMedia className="ip-research-work-preview" src="/ip-case/research/research-02.webp" alt="对标穿搭作品拆解表，记录拍摄场景、呈现方式和核心单品" label="放大作品拆解表"/>
+          <p>逐条标记拍摄场景、呈现方式和核心单品。例如，旅行度假是场景，快切换装是拍法，两者可以组合成一个选题。</p>
+        </article>
+        <article className="ip-process-card ip-research-library">
+          <div className="ip-process-label"><span>03</span><h5>我的穿搭选题库</h5></div>
+          <DocumentMedia src="/ip-case/research/research-03.png" alt="是亮亮穿搭选题库，包含30条候选选题及定位匹配、获得感、拍摄可行性和热度评分" label="放大穿搭选题库"/>
+          <p>我把候选选题整理成表，按账号定位、观众能学到什么、拍摄可行性和热度打分，再比较哪些值得先拍。</p>
+          <p className="ip-research-hint">30 条选题 · 点击截图可放大 ↗</p>
+        </article>
+      </div>
+    </section>
   </div>;
 }
