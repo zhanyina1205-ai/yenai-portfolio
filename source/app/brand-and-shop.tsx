@@ -41,12 +41,19 @@ return <article className="monti-case" id="montirivers" aria-labelledby="monti-t
     <div className="case-meta"><span>03 / BRAND ACCOUNT</span><span>2026.06—09 · 内容策划 / 账号运营</span></div>
     <div className="monti-hero"><div className="monti-hero-copy"><p className="case-script">A poem in gold.</p><h3 id="monti-title">MontiRivers<span>山河集</span></h3><p className="monti-lead">把黄金，写成一首<br/>可以佩戴的当代诗。</p><div className="monti-tags"><span>岭南文化</span><span>自然意象</span><span>当代手作</span></div><p className="monti-brief">参与初创品牌从 0 到 1 的内容建设，<br/>从单品展示，走向有辨识度的品牌表达。</p><a href="https://www.xiaohongshu.com/user/profile/682d4255000000000601fa43" {...external}>查看品牌账号 ↗</a></div><figure><DocumentMedia src="/montirivers/brand-1.jpg" alt="MontiRivers山河集自然场景佩戴形象图"/><figcaption>东方之韵 / 当代之形</figcaption></figure></div>
     <div className="monti-summary"><div className="monti-account-numbers"><div><b>2,074</b><span>官方号粉丝</span></div><div><b>1.56万</b><span>获赞与收藏</span></div><div><b>122</b><span>累计笔记</span></div></div><div className="monti-audience"><span>目标受众 / 策略判断</span><p>深圳都市女性 · 约 25—40 岁<br/>在意设计、东方美学与日常佩戴感</p><div><span>悦己通勤</span><span>婚嫁三金</span><span>节日赠礼</span></div></div></div>
-    <div className="monti-peers"><div><span>竞品看什么</span><h4>取方法，留住自己的调性。</h4></div><ul><li><b>寶蘭</b><span>诗化影像<br/>少发精发</span></li><li><b>琳朝</b><span>工艺叙事<br/>预告＋正片</span></li><li><b>YIN隐</b><span>当代设计<br/>定位之外要有内容</span></li><li><b>文博金</b><span>同城同期<br/>店员号矩阵</span></li></ul></div>
+    <div className="monti-peers monti-peers-expanded"><div><span>竞品看什么</span><h4>取方法，留住自己的调性。</h4></div><ul><li><b>寶蘭</b><span>诗化影像<br/>少发精发</span></li><li><b>琳朝</b><span>工艺叙事<br/>预告＋正片</span></li><li><b>YIN隐</b><span>当代设计<br/>定位之外要有内容</span></li><li><b>文博金</b><span>同城同期<br/>店员号矩阵</span></li><li><b>老铺黄金</b><span>金饰工艺<br/>特写呈现</span></li><li><b>君佩珠宝</b><span>设计细节<br/>试戴呈现</span></li></ul></div>
+    <div className="monti-content-method"><div><span>01 / 特写</span><h5>让工艺被看清</h5><p>用特写呈现金饰的纹理与工艺，把产品细节放进品牌表达。</p></div><div><span>02 / 试戴</span><h5>让设计落在身上</h5><p>用试戴画面展示设计细节，让顾客看到佩戴比例和上身效果。</p></div></div>
     <p className="case-caption">账号快照：2026.11.01；受众为门店位置、内容与评论推断，非后台画像。图片来自品牌公开报道。</p>
   </section>
   <section className="monti-page monti-work" id="montirivers-work">
     <div className="case-meta"><span>FROM 0 TO 1 / MY ROLE</span><span>从“产品图”，到“品牌诗集”</span></div>
-    <header className="monti-heading"><div><p className="case-script">Make it seen.</p><h4>我做了什么</h4></div><p>6—9 月官方内容由我经手，<br/>负责内容策划、栏目组织与账号运营。</p><div className="monti-work-total"><b>33<small>篇</small></b><span>27 篇图文 / 6 条视频</span></div></header>
+    <header className="monti-heading"><div><p className="case-script">Make it seen.</p><h4>我做了什么</h4></div><p>2026.06—2026.09<br/>深圳市山河集文化有限公司 · 内容运营</p><div className="monti-work-total"><b>33<small>篇</small></b><span>27 篇图文 / 6 条视频</span></div></header>
+    <div className="monti-role-scope">
+      <div><span>01 / 官方号</span><h5>选题、文案与剪辑</h5><p>负责官方账号内容策划、栏目组织与账号运营。</p></div>
+      <div><span>02 / 门店</span><h5>指导店员拍摄</h5><p>把品牌要求拆成具体拍摄标准，帮助店员呈现产品。</p></div>
+      <div><span>03 / KOL</span><h5>审核选题、脚本与成片</h5><p>从内容方向到最终画面，核对品牌表达与产品细节。</p></div>
+    </div>
+    <div className="monti-tenure-growth"><div><span>任职期间 · 官方号粉丝变化</span><p>从起步阶段，逐步积累品牌关注。</p></div><strong>约 500<small>人</small><i aria-hidden="true">→</i>2,000<small>余人</small></strong></div>
     <ol className="monti-flow"><li><span>01 / 定位</span><b>先统一品牌语言</b><p>自然意象、诗化短句，确定官方号的表达。</p></li><li><span>02 / 栏目</span><b>让内容成为系列</b><p>品牌故事、系列篇、节气、戴上它的人。</p></li><li><span>03 / 发布</span><b>把节点做成组合</b><p>预告 → 正片 → 产品短片，串起一轮发布。</p></li><li><span>04 / 复盘</span><b>从好看到有用</b><p>对照赞藏与提问，把选购信息接给顾问号。</p></li></ol>
     <div className="monti-note-grid">{brandNotes.map((n,i)=><a className="monti-note" key={n.id} href={`https://www.xiaohongshu.com/explore/${n.id}`} {...external}><div className="monti-note-image"><img src={assetPath(`/montirivers/note-${i+1}.jpg`)} alt={`山河集视频封面：${n.title}`} loading="lazy"/><span className="monti-play" aria-label="打开视频笔记">↗</span><span className="monti-note-index">{n.label}</span></div><div className="monti-note-copy"><h5>{n.title}</h5><p>{n.text}</p><div className="case-note-stats"><span>♡ {n.likes}<small>赞</small></span><span>☆ {n.saves}<small>藏</small></span></div></div></a>)}</div>
     <section className="monti-process" id="montirivers-gold-process" aria-labelledby="monti-process-title">
@@ -83,9 +90,35 @@ return <article className="monti-case" id="montirivers" aria-labelledby="monti-t
     </div>
   </section>
   <section className="monti-page monti-matrix" id="montirivers-matrix">
-    <div className="case-meta"><span>ONE BRAND / SIX VOICES</span><span>我管理过的店员账号</span></div>
+    <div className="case-meta"><span>ONE BRAND / SIX VOICES</span><span>店员账号展示样本</span></div>
     <header className="monti-heading"><div><p className="case-script">Closer to people.</p><h4>让品牌，有人回应。</h4></div><p>官方号建立审美，顾问号补充实戴与选购。<br/>把内容与深圳门店连接起来。</p></header>
-    <div className="monti-matrix-layout"><div className="monti-store"><DocumentMedia src="/montirivers/brand-2.jpg" alt="山河集深圳平安金融中心门店与黄金陈列"/><div className="monti-matrix-totals"><span><b>6</b>个店员账号</span><span><b>1,165</b>粉丝加总</span><span><b>5,849</b>赞藏加总</span></div><div className="monti-route"><h5>我设计的内容承接路径</h5><p>内容种草 <i>→</i> 进入主页 <i>→</i> 私信 / 顾问<br/>到店看货 <i>→</i> 晒单回流</p><small>路径设计，非已验证的成交漏斗</small></div><div className="monti-signal"><span>可见的需求信号</span><p>“多少钱？” “足金还是 18K？” “怎么买？”</p><small>公开评论已经出现选购提问；下一步是把咨询承接做好。</small></div></div><div className="monti-staff-grid">{staff.map((s,i)=><a key={s.name} href={`https://www.xiaohongshu.com/user/profile/${s.id}`} {...external}><div className="monti-staff-top"><span>0{i+1}</span><b>{s.name}</b><i>↗</i></div><p>{s.label}</p><div className="monti-staff-bar" role="img" aria-label={`${s.name}：${s.fans}粉丝`}><i style={{width:`${s.fans/612*100}%`}}/></div><div className="monti-staff-values"><span><b>{s.fans}</b> 粉丝</span><span><b>{s.likes}</b> 赞藏</span></div></a>)}</div></div>
+    <section className="monti-store-guidelines" id="montirivers-store-sop" aria-labelledby="monti-store-sop-title">
+      <header><span>STORE GUIDELINES / 10 个店员账号</span><h5 id="monti-store-sop-title">把品牌要求，写成店员能照着拍的 SOP。</h5></header>
+      <div className="monti-sop-layout">
+        <div className="monti-sop-document">
+          <a className="document-media monti-sop-preview" href={assetPath("/montirivers/store-sop/staff-sop.webp")} {...external} aria-label="打开完整小红书店员账号 SOP 长图">
+            <img src={assetPath("/montirivers/store-sop/staff-sop-preview.webp")} alt="Montirivers山河集小红书店员账号SOP，包含主页设置、拍摄角度与门店示例" loading="lazy"/>
+            <span className="media-enlarge" aria-hidden="true">↗</span>
+          </a>
+          <a className="monti-sop-full-link" href={assetPath("/montirivers/store-sop/staff-sop.webp")} {...external}>打开完整 SOP 长图 ↗</a>
+        </div>
+        <div className="monti-sop-notes">
+          <article><span>01 / 拍摄标准</span><h5>一件首饰，三种视角。</h5><div className="monti-angle-tags"><span>全貌</span><span>工艺细节</span><span>上身效果</span></div><p>每件首饰拍全貌、工艺细节和上身效果，让顾客看清纹理和佩戴比例。</p></article>
+          <article><span>02 / 根据反馈调整</span><h5>把顾客的问题，写进下一条。</h5><p>每天看笔记数据和评论，把顾客反复问到的成色、购买方式写进下一条视频。</p></article>
+        </div>
+      </div>
+      <div className="monti-staff-examples">
+        <a href="https://www.xiaohongshu.com/explore/6a87dbef0000000033026a70" {...external} className="monti-staff-example">
+          <img src={assetPath("/montirivers/store-sop/jenny-cover.webp")} alt="Jenny店员成片，花形黄金项链的全貌展示" loading="lazy"/>
+          <div><span>对应店员成片 / Jenny</span><h5>Endless Summer · 无尽夏<br/>颈间诗</h5><p>山河集深圳店 Jenny</p><small>199 赞 · 113 收藏</small><b>打开视频笔记 ↗</b></div>
+        </a>
+        <a href="https://www.xiaohongshu.com/explore/6ae9307e0000000007003b31" {...external} className="monti-staff-example">
+          <img src={assetPath("/montirivers/store-sop/krystal-cover.webp")} alt="Krystal店员成片，在手上展示圆筒金饰的细节与比例" loading="lazy"/>
+          <div><span>对应店员成片 / Krystal</span><h5>圆筒的寓意与佩戴</h5><p>在传统首饰里，圆筒寓意着流转与顺遂，是带着祈愿意味的随身物。</p><small>7 赞</small><b>打开视频笔记 ↗</b></div>
+        </a>
+      </div>
+    </section>
+    <div className="monti-matrix-layout"><div className="monti-store"><DocumentMedia src="/montirivers/brand-2.jpg" alt="山河集深圳平安金融中心门店与黄金陈列"/><div className="monti-matrix-totals"><span><b>6</b>个账号样本</span><span><b>1,165</b>粉丝加总</span><span><b>5,849</b>赞藏加总</span></div><div className="monti-route"><h5>我设计的内容承接路径</h5><p>内容种草 <i>→</i> 进入主页 <i>→</i> 私信 / 顾问<br/>到店看货 <i>→</i> 晒单回流</p><small>路径设计，非已验证的成交漏斗</small></div><div className="monti-signal"><span>可见的需求信号</span><p>“多少钱？” “足金还是 18K？” “怎么买？”</p><small>公开评论已经出现选购提问；下一步是把咨询承接做好。</small></div></div><div className="monti-staff-grid">{staff.map((s,i)=><a key={s.name} href={`https://www.xiaohongshu.com/user/profile/${s.id}`} {...external}><div className="monti-staff-top"><span>0{i+1}</span><b>{s.name}</b><i>↗</i></div><p>{s.label}</p><div className="monti-staff-bar" role="img" aria-label={`${s.name}：${s.fans}粉丝`}><i style={{width:`${s.fans/612*100}%`}}/></div><div className="monti-staff-values"><span><b>{s.fans}</b> 粉丝</span><span><b>{s.likes}</b> 赞藏</span></div></a>)}</div></div>
     <div className="monti-matrix-bottom"><p><b>我留下的下一步：</b>统一品牌名称与门店入口，让不同顾问号提供不同的选购价值。</p><a href={matrixSource} {...external}>看店员账号分析 ↗</a></div>
     <details className="case-source"><summary>资料来源与统计说明</summary><p>六号数据核查于 2026.11.01，粉丝简单相加、未去重；赞藏为平台合计项。展示当前账号快照，不等同于本人任职期间的增长成果。卡片标签概括可见主页与内容，非六号已执行的固定分工。近 10 条非置顶笔记点赞中位数为 4.5—7.5；历史高赞内容不代表日常水平。没有后台私信、预约与成交数据。</p><a href={brandSource} {...external}>品牌与起号复盘 ↗</a><a href="https://mcn7qru2e05g.feishu.cn/base/F6ZubiRN2aThz8sJ8V7cgSjanEg" {...external}>竞品资料 ↗</a><a href="https://www.jiemian.com/article/14850491.html" {...external}>品牌图片来源 ↗</a></details>
   </section>

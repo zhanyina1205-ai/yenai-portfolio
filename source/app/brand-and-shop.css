@@ -133,3 +133,50 @@
  .gold-reader header{padding:9px;gap:6px}.gold-reader header small{font-size:9px}
 }
 @media(max-width:480px){.gold-preview span{white-space:nowrap;font-size:11px;gap:4px;padding:5px 7px;right:3px;bottom:4px}}
+
+.monti-peers-expanded ul{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:18px}
+.monti-content-method{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:24px;padding-top:20px;border-top:1px solid #cbbab0}
+.monti-content-method span,.monti-role-scope>div>span{font-size:10px;letter-spacing:.7px;color:#895a6c}
+.monti-content-method h5,.monti-role-scope h5{font-size:19px;font-weight:500;margin:8px 0}
+.monti-content-method p,.monti-role-scope p{font-size:12px;line-height:1.9;margin:0;color:#76655f}
+.monti-role-scope{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:20px 0;border-top:1px solid #c58c9950}
+.monti-role-scope>div{min-width:0}
+.monti-role-scope h5{color:#302622}
+.monti-role-scope p{color:#76655f}
+.monti-tenure-growth{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;padding:18px 22px;margin-bottom:22px;border:1px solid #c58c9950;border-radius:5px 22px 5px 5px;background:var(--pink)}
+.monti-tenure-growth>div>span{font-size:12px;color:#59454d}
+.monti-tenure-growth p{font-size:11px;color:#59454d;margin:7px 0 0}
+.monti-tenure-growth strong{font-size:clamp(27px,3vw,42px);font-weight:500;color:#302622;white-space:nowrap}
+.monti-tenure-growth small{font-size:12px;margin-left:5px}
+.monti-tenure-growth i{font-style:normal;font-size:26px;margin:0 22px;color:#c58c99}
+.monti-store-guidelines{margin:28px 0;padding-top:22px;border-top:1px solid #cbbab0}
+.monti-store-guidelines>header>span,.monti-sop-notes article>span,.monti-staff-example div>span{font-size:10px;letter-spacing:.8px;color:#895a6c}
+.monti-store-guidelines>header>h5{font-size:clamp(22px,2.3vw,30px);font-weight:500;margin:10px 0 24px}
+.monti-sop-layout{display:grid;grid-template-columns:1.1fr 1fr;align-items:start;gap:28px}
+.monti-sop-preview{display:block;border:1px solid #d6c4b8;border-radius:8px;overflow:hidden;background:#fff}
+.monti-sop-preview>img{display:block;width:100%;height:auto;filter:none}
+.monti-sop-full-link{display:inline-block;font-size:11px;margin-top:12px;border-bottom:1px solid #a3828c;padding-bottom:4px}
+.monti-sop-notes{display:grid;gap:22px}
+.monti-sop-notes article{padding:20px 22px;background:#f3c4cf80;border-radius:5px 20px 5px 5px}
+.monti-sop-notes h5{font-size:20px;font-weight:500;line-height:1.5;margin:10px 0}
+.monti-sop-notes p{font-size:13px;line-height:1.9;color:#594b46;margin:12px 0 0}
+.monti-angle-tags{display:flex;flex-wrap:wrap;gap:8px}
+.monti-angle-tags>span{font-size:11px;padding:4px 10px;border:1px solid #b48c98;border-radius:20px}
+.monti-staff-examples{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:26px}
+.monti-staff-example{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:18px;align-items:start;padding:16px;background:#faf4ec;border:1px solid #d6c4b8;border-radius:5px 22px 5px 5px;min-width:0}
+.monti-staff-example>img{width:100%;height:auto;display:block;border-radius:4px;filter:none}
+.monti-staff-example h5{font-size:18px;font-weight:500;line-height:1.6;margin:10px 0}
+.monti-staff-example p{font-size:12px;line-height:1.8;color:#76655f}
+.monti-staff-example small{display:block;font-size:11px;color:#895a6c}
+.monti-staff-example b{display:block;font-size:11px;font-weight:400;margin-top:14px;color:#895a6c}
+.monti-staff-example:focus-visible,.monti-sop-preview:focus-visible{outline:2px solid #895a6c;outline-offset:4px}
+@media(max-width:700px){
+ .monti-peers-expanded ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .monti-content-method,.monti-role-scope,.monti-sop-layout,.monti-staff-examples{grid-template-columns:1fr}
+ .monti-role-scope{gap:20px}
+ .monti-tenure-growth{padding:16px}
+ .monti-tenure-growth i{margin-inline:12px}
+ .monti-sop-notes article{padding:18px}
+ .monti-staff-example{gap:14px;padding:14px}
+ .monti-staff-example h5{font-size:16px}
+}
