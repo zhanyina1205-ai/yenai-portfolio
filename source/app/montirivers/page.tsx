@@ -1,3 +1,4 @@
+import './store-sop.css';
 import { ModuleShell } from '../module-shell';
 import { MontiriversCase } from '../brand-and-shop';
 export const metadata={title:'山河集 · 椰奶作品集'};

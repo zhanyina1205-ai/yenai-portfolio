@@ -1,0 +1,39 @@
+/* Keep the document, shooting notes and finished examples in one desktop spread. */
+.monti-matrix .monti-store-guidelines{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(0,1.8fr);gap:18px 24px;align-items:stretch;margin:24px 0 30px;padding-top:18px;scroll-margin-top:18px}
+.monti-store-guidelines>header{grid-column:1 / -1}
+.monti-store-guidelines>header>h5{font-size:clamp(21px,2vw,27px);margin:8px 0 2px;line-height:1.5}
+.monti-store-guidelines .monti-sop-layout{display:contents}
+.monti-store-guidelines .monti-sop-document{grid-column:1;grid-row:2 / 4;display:flex;flex-direction:column;justify-content:center;gap:12px;min-width:0;padding:14px;background:#faf4ec;border:1px solid #d6c4b8;border-radius:14px;box-shadow:0 4px 0 #9c7a6c14}
+.monti-store-guidelines .monti-sop-preview{height:auto;min-height:0;flex:1;display:grid;place-items:center;border:1px solid #e2d5ca;border-radius:7px;background:#fff;overflow:hidden}
+.monti-store-guidelines .monti-sop-preview>img{display:block;width:100%;height:clamp(250px,42svh,340px);max-height:none;aspect-ratio:auto;object-fit:contain;object-position:center;filter:none}
+.monti-store-guidelines .monti-sop-full-link{align-self:flex-start;font-size:10px;line-height:1.6;margin:0;padding:0 0 3px}
+.monti-store-guidelines .monti-sop-notes{grid-column:2;grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.monti-store-guidelines .monti-sop-notes article{min-width:0;padding:15px 16px;background:#efd5dc;border:1px solid #ddbec8;border-radius:11px}
+.monti-store-guidelines .monti-sop-notes article>span{font-size:9px;letter-spacing:.4px}
+.monti-store-guidelines .monti-sop-notes h5{font-size:16px;line-height:1.6;margin:8px 0}
+.monti-store-guidelines .monti-sop-notes p{font-size:11px;line-height:1.8;margin:9px 0 0}
+.monti-store-guidelines .monti-angle-tags{gap:5px}
+.monti-store-guidelines .monti-angle-tags>span{font-size:10px;padding:3px 7px}
+.monti-store-guidelines .monti-staff-examples{grid-column:2;grid-row:3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0}
+.monti-store-guidelines .monti-staff-example{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:12px;align-items:center;padding:12px;background:#faf4ec;border:1px solid #d6c4b8;border-radius:11px;box-shadow:0 3px 0 #9c7a6c10}
+.monti-store-guidelines .monti-staff-example>img{width:100%;height:clamp(145px,23svh,205px);aspect-ratio:auto;object-fit:contain;background:#eee5d9;border-radius:5px}
+.monti-store-guidelines .monti-staff-example div>span{font-size:9px;letter-spacing:.3px}
+.monti-store-guidelines .monti-staff-example h5{font-size:15px;line-height:1.6;margin:8px 0}
+.monti-store-guidelines .monti-staff-example p{font-size:11px;line-height:1.7;margin:7px 0}
+.monti-store-guidelines .monti-staff-example small{font-size:10px}
+.monti-store-guidelines .monti-staff-example b{font-size:10px;margin-top:10px}
+@media(max-width:1100px){
+ .monti-matrix .monti-store-guidelines{display:block}
+ .monti-store-guidelines>header>h5{margin-bottom:18px}
+ .monti-store-guidelines .monti-sop-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:18px}
+ .monti-store-guidelines .monti-sop-document,.monti-store-guidelines .monti-sop-notes{grid-column:auto;grid-row:auto}
+ .monti-store-guidelines .monti-sop-notes{grid-template-columns:1fr;gap:14px}
+ .monti-store-guidelines .monti-staff-examples{margin-top:18px}
+}
+@media(max-width:700px){
+ .monti-store-guidelines .monti-sop-layout,.monti-store-guidelines .monti-staff-examples{grid-template-columns:1fr}
+ .monti-store-guidelines .monti-sop-document{width:100%;max-width:360px;justify-self:center;padding:12px}
+ .monti-store-guidelines .monti-sop-preview>img{height:300px}
+ .monti-store-guidelines .monti-staff-example{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:14px;padding:12px}
+ .monti-store-guidelines .monti-staff-example>img{height:170px}
+}
