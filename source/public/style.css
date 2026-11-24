@@ -48,3 +48,6 @@ body::after{content:"";position:fixed;inset:0;background:#111110;opacity:0;point
   .cup .module-label{width:100%;max-width:100%;white-space:normal}
   .slice .module-label{width:84%;font-size:6px;white-space:normal}
 }
+
+/* Apply the edited role lettering only; preserve the original illustration elsewhere. */
+.home-role-art{mask-image:linear-gradient(to right,transparent 38%,#000 39%,#000 61%,transparent 62%),linear-gradient(to bottom,transparent 31.5%,#000 32%,#000 39%,transparent 39.5%);mask-composite:intersect}
