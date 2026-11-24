@@ -1,5 +1,5 @@
 /* Keep the document, shooting notes and finished examples in one desktop spread. */
-.monti-matrix .monti-store-guidelines{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(0,1.8fr);gap:18px 24px;align-items:stretch;margin:24px 0 30px;padding-top:18px;scroll-margin-top:18px}
+.monti-matrix .monti-store-guidelines{display:grid;grid-template-columns:minmax(230px,.85fr) minmax(0,1.8fr);gap:18px 24px;align-items:stretch;margin:24px 0 0;padding-top:18px;scroll-margin-top:18px}
 .monti-store-guidelines>header{grid-column:1 / -1}
 .monti-store-guidelines>header>h5{font-size:clamp(21px,2vw,27px);margin:8px 0 2px;line-height:1.5}
 .monti-store-guidelines .monti-sop-layout{display:contents}
