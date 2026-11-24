@@ -22,7 +22,6 @@ export function IpCaseContext() {
       <p className="matrix-purpose">{account.purpose}</p>
       {account.featured && <span className="matrix-role">我主要负责的账号 ↗</span>}
     </article>)}</div>
-    <p className="source-note ip-data-note">粉丝数快照：抖音 2026.10.31，小红书 2026.10.12，非实时；此处「涂芷靓」为穿搭号，不含同名日常号。各平台粉丝可能重合，不作加总。账号规模与历史增长属于项目背景，我的实际职责为 PR 商务对接、选品搭配和剪辑。</p>
 
     </section>
     <IpAudience/>
