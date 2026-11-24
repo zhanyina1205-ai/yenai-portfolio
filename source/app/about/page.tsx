@@ -1,3 +1,4 @@
+import './profile.css';
 import { ModuleShell } from '../module-shell';
 import { Biography } from '../portfolio-content';
 export const metadata={title:'个人介绍 · 椰奶作品集'};
