@@ -59,7 +59,7 @@ export function IpCaseContext() {
       <div className="ip-process-grid">
         <article className="ip-process-card">
           <div className="ip-process-label"><span>01</span><h5>搭配图片</h5></div>
-          <DocumentMedia className="ip-outfit-preview" src="/ip-case/outfits-01.png" previewSrc="/ip-case/outfits-01-preview.jpg" alt="第一条爆款视频的七套夏日穿搭平铺图，包含服装、鞋包与配饰" label="放大搭配图片"/>
+          <DocumentMedia className="ip-outfit-preview" src="/ip-case/seven-outfit-looks.png" previewSrc="/ip-case/seven-outfit-looks-preview.jpg" alt="第一条爆款视频的七套夏日穿搭平铺图，包含服装、鞋包与配饰" label="放大搭配图片"/>
           <p>七套穿搭 · 点击查看大图 ↗</p>
         </article>
         <article className="ip-process-card">
